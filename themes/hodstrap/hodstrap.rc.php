@@ -72,6 +72,8 @@ cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/js/jpreloader/js/jpreload
 cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/js/jpreloader/css/jpreloader.css');
 
 cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/js/js.js');
+cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/js/main.js');
+cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/js/smooth-scroll.js');
 
 
 $R['input_checkbox'] = '<input type="hidden" name="{$name}" value="{$value_off}" /><label><input type="checkbox" name="{$name}" value="{$value}"{$checked}{$attrs} /> {$title}</label>';

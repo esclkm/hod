@@ -1,4 +1,3 @@
-<!-- BEGIN: FOOTER -->
 
 <footer>
 	<div class="container container-fluid">
@@ -36,7 +35,10 @@
 	</div>				
 </footer>
 							
-							
+			
+
+<!-- BEGIN: FOOTER -->
+				
 <section id="contacts" class="clearfix">
         <div class="col-xs-12 col-sm-6 contacts-col text-col left-col">
             <div class="container">
@@ -111,12 +113,12 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 map" id="spbMap">
-            <img src="assets/images/map.jpg" alt="" class="img-responsive">
+            <img src="themes/hodstrap/images/map.jpg" alt="" class="img-responsive">
             <!--<i class="circle-icon marker"></i>-->
             <i class="small-icon close-icon"></i>
         </div>
         <div class="col-xs-12 col-sm-6 map" id="mskMap">
-            <img src="assets/images/kv.jpg" alt="" class="img-responsive">
+            <img src="themes/hodstrap/images/kv.jpg" alt="" class="img-responsive">
             <!--<i class="circle-icon marker"></i>-->
             <i class="small-icon close-icon"></i>
         </div>

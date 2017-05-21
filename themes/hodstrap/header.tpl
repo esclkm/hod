@@ -21,7 +21,7 @@
 		<link rel="shortcut icon" href="favicon.ico" />
 		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 		<link rel="image_src" href="{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/images/logo.png" />
-		<meta property="og:image" content="{PHP.cfg.mainurl}/{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/images/logoBig.jpg" />
+	<!--	<meta property="og:image" content="{PHP.cfg.mainurl}/{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/images/logoBig.jpg" />-->
 
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		{PHP.cfg.customjs_head}
@@ -46,7 +46,7 @@
 							<span class="icon-bar"></span>
 							<span class="sr-only">Toggle navigation</span>
 						</button>
-						<a class="navbar-brand page-scroll visible-xs" href="{PHP.cfg.mainurl}"><img class="img-responsive" src="assets/images/logo-min.png" alt=""></a>
+						<a class="navbar-brand page-scroll visible-xs" href="{PHP.cfg.mainurl}"><img class="img-responsive" src="{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/images/logo-min.png" alt=""></a>
 					</div>
 					<div class="collapse navbar-collapse" id="navbar-collapse-1">
 						<ul class="nav navbar-nav navbar-center">
