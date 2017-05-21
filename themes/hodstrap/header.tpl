@@ -46,28 +46,23 @@
 							<span class="icon-bar"></span>
 							<span class="sr-only">Toggle navigation</span>
 						</button>
-						<a class="navbar-brand page-scroll visible-xs" href="#page-top"><img class="img-responsive" src="assets/images/logo-min.png" alt=""></a>
+						<a class="navbar-brand page-scroll visible-xs" href="{PHP.cfg.mainurl}"><img class="img-responsive" src="assets/images/logo-min.png" alt=""></a>
 					</div>
 					<div class="collapse navbar-collapse" id="navbar-collapse-1">
 						<ul class="nav navbar-nav navbar-center">
-							<li>
-								<a class="page-scroll" href="#company">Компания</a>
-							</li>
-							<li>
-								<a class="page-scroll" href="#portfolio">Реализованные проекты</a>
-							</li>
-							<li>
-								<a class="page-scroll" href="#blog">Блог</a>
-							</li>
-							<li>
-								<a class="page-scroll" href="#rent">Аренда</a>
-							</li>
-							<li>
-								<a class="page-scroll" href="#contacts">Контакты</a>
-							</li>
+							<li><a class="page-scroll" href="{PHP|cot_url('page', 'c=system&al=kompaniya')}">Компания</a></li>
+							<li><a class="page-scroll" href="{PHP|cot_url('page', 'c=projects')}">Реализованные проекты</a></li>
+							<li><a class="page-scroll" href="{PHP|cot_url('page', 'c=blog')}">Блог</a></li>
+							<li><a class="page-scroll" href="{PHP|cot_url('page', 'c=system&al=arenda')}">Аренда</a></li>
+							<li><a class="page-scroll" href="{PHP|cot_url('page', 'e=contact')}">Контакты</a></li>
+							<!-- IF {PHP.usr.isadmin} -->
+							<li><a href="{PHP|cot_url('admin')}" class="external" title="Админ-панель"><span class="glyphicon glyphicon-cog"></span> </a></li>
+							<li><a href="{PHP|cot_url('page', 'm=add')}" class="external" title="Добавить страницу"><span class="glyphicon glyphicon-plus-sign"></span></a></li>
+							<li><a href="{PHP.out.loginout_url}" class="external" title="{PHP.L.Logout}"><span class="glyphicon glyphicon-log-out"></span></a></li>
+							<!-- ENDIF -->
 						</ul>
 						<ul class="nav navbar-nav navbar-number">
-							<li>+7 812 459-98-95</li>
+							<li>{PHP.cfg.head_phone}</li>
 						</ul>
 					</div>
 				</div>
@@ -82,7 +77,7 @@
 					</div>
 					<div class="row">
 						<div class="intro-text">
-							<p>Восстановление, модернизация и строительство снегоболотоходов-амфибий</p>
+							<p>{PHP.cfg.subtitle}</p>
 							<button class="btn intro-btn white-btn">Оставить заявку</button>
 							<a href=""><i class="small-icon white-arrow"></i></a>
 						</div> 
@@ -91,46 +86,4 @@
 				</div>
 			</header>
     
-		<div>
-			<nav class="navbar2 navbar2-default navbar-fixed-top" role="navigation">
-				<div class="container container-fluid">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar2-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="{PHP.cfg.mainurl}" title="{PHP.cfg.maintitle} {PHP.cfg.separator} {PHP.cfg.subtitle}">
-							<img src="{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/images/logo.svg" class="logo-full">
-							<img src="{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/images/logo_small.svg" class="logo-short">
-						</a>
-					</div>
-
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul id="nav" class="nav navbar-nav  navbar-right">				
-							<li class="active"><a href='#slide-1'>Главная</a></li>
-							<li><a href='#slide-6'>Портфолио</a></li>
-							<li><a href='#slide-6x'>Стоимость</a></li>
-							<li><a href='#slide-8'>Отзывы</a></li>
-							<li><a href='#slide-9'>Контакты</a></li>
-							<!-- IF {PHP.usr.isadmin} -->
-							<li><a href="{PHP|cot_url('admin')}" class="external" title="Админ-панель"><span class="glyphicon glyphicon-cog"></span> </a></li>
-							<li><a href="{PHP|cot_url('page', 'm=add')}" class="external" title="Добавить страницу"><span class="glyphicon glyphicon-plus-sign"></span></a></li>
-							<li><a href="{PHP.out.loginout_url}" class="external" title="{PHP.L.Logout}"><span class="glyphicon glyphicon-log-out"></span></a></li>
-							<!-- ENDIF -->
-						</ul>
-
-					</div><!-- /.navbar-collapse -->
-				</div><!-- /.container-fluid -->
-			</nav>
-			<div class="clearfix"></div>
-		</div>
-		
-
-
-
-
 <!-- END: HEADER -->
