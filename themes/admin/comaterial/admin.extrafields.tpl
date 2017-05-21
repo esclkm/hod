@@ -123,11 +123,12 @@
 //]]>
 </script>
 <!-- BEGIN: TABLE -->
+<form action="{ADMIN_EXTRAFIELDS_URL_FORM_EDIT}" method="post">
 <h3>{PHP.L.editdeleteentries}:</h3>
 <div class="panel panel-default">
 
     <div class="panel-body">
-        <form action="{ADMIN_EXTRAFIELDS_URL_FORM_EDIT}" method="post">
+        
             <table class="table table-striped">
                 <!--<thead>-->
                     <!--<tr>-->
@@ -210,7 +211,7 @@
                 </tr>
                 <!-- ENDIF -->
             </table>
-        </form>
+        
         <!-- IF {ADMIN_EXTRAFIELDS_PAGNAV} -->
         <div class="text-right">
             <nav>
@@ -227,6 +228,7 @@
 	<button type="submit" class="btn btn-primary" onclick="location.href='{ADMIN_EXTRAFIELDS_ROW_FORM_URL}'">
 		<span class="fa fa-refresh"></span> {PHP.L.Update}</button>
 </div>
+</form>
 <h3>{PHP.L.adm_extrafield_new}</h3>
 <form action="{ADMIN_EXTRAFIELDS_URL_FORM_ADD}" method="post">
 <div class="panel panel-default">

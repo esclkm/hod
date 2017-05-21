@@ -100,7 +100,23 @@
 				</div>
 			</div>
 			<div class="tab-pane" id="optionsform">	
-			    {LANDINGINDEXPAGE}
+
+			    <div class="form-group">
+					<label>{PAGEADD_FORM_HARAKTERISTIKI_TITLE}</label>
+					<div>{PAGEADD_FORM_HARAKTERISTIKI}</div>
+				</div>
+			    <div class="form-group">
+					<label>{PAGEADD_FORM_HARAKTERISTIKI_SHORT_TITLE}</label>
+					<div>{PAGEADD_FORM_HARAKTERISTIKI_SHORT}</div>
+				</div>
+				<div class="form-group">
+					<label>{PAGEADD_FORM_TEXT_SHORT_TITLE}</label>
+					<div>{PAGEADD_FORM_TEXT_SHORT}</div>
+				</div>
+				<div class="form-group">
+					<label>{PAGEADD_FORM_PRICE_TITLE} ({PAGEADD_FORM_PRICE_PLUS})</label>
+					<div>{PAGEADD_FORM_PRICE} </div>
+				</div>
 			</div>	
 		</div>
 		<div class="publish margintop10 marginbottom10">
