@@ -1,0 +1,40 @@
+	.directive('questionSurveyResultField', ['questionFactory', 'questionSerice', function (questionFactory, questionSerice) {
+			return {
+				// Restrict to elements and attributes
+				restrict: 'EA',
+				// Assign the angular directive template HTML
+				template: '<div class="survey-result-field">{{model}}</div',
+			//	replace: true,
+				// Assign the angular scope attribute formatting
+				//			controller : 'pfsCtrl',
+				scope: {
+					model: '=ngModel', // yes THE value of calculated field will be saved in the database - this important for future reports
+					question: '=ngQuestion',
+					siteId: '=ngSiteId'
+				},
+				link: function ($scope, element, attrs) {
+
+					var q_options_array = $scope.strToArr($scope.question.options);
+					var q_options =  {
+						survey_id : q_options_array[0],
+						question_id : q_options_array[1],
+						type : q_options_array[2] || 'risk',
+						type_id : q_options_array[3] || 0,
+						
+					}
+					var survey_id = parseInt(q_options_array[0]);
+					var results = getSurveyResultsBySurveyId(survey_id, type);
+					var result;
+					var question_id = parseInt(q_options_array[1]);
+					$scope.model questionFactory.getResultByQuestionId(survey_id, $scope.options.site_id, type.type, type.type_id, question_id).then(function(successData) {
+						result = successData.data.result;
+						question_default = result.value;
+						//return
+						 return question_default;
+					});
+				}
+			};
+
+		}]);
+
+	

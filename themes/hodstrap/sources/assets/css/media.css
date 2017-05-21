@@ -1,0 +1,210 @@
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+  .text-col .container {
+    padding: 0 15px;
+  }
+  #mainNav.navbar-not-home .container {
+    width: 1280px;
+  }
+}
+@media (min-width: 1200px) {
+  #home-page .container {
+    width: 100%;
+  }
+}
+@media (min-width: 1086px) and (max-width: 1280px) {
+  .container {
+    width: 1086px;
+  }
+  #mainNav.navbar-not-home .container {
+    width: 1086px;
+  }
+}
+@media (max-width: 1200px) {
+  #mainNav.navbar-home .container {
+    width: 100%;
+  }
+}
+@media (max-width: 1086px) {
+  #mainNav.navbar-not-home .container {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  #mainNav.navbar-not-home .navbar-center {
+    margin-right: 100px;
+  }
+  #mainNav.navbar-not-home .navbar-nav > li > a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #portfolio .text-col {
+    padding: 0 20px 20px;
+  }
+  #portfolio .text-col .arrow {
+    top: 28px;
+    right: 20px;
+  }
+  #contacts .rights {
+    bottom: 5px;
+    top: auto;
+  }
+}
+@media (max-width: 870px) {
+  #mainNav.navbar-not-home .navbar-nav > li > a {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  #video .left .white-arrow {
+    left: 10px;
+  }
+  #video .right .white-arrow {
+    right: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .links a {
+    float: none;
+    width: 100%;
+    display: block;
+  }
+  #mainNav {
+    height: 53px;
+  }
+  #mainNav .navbar-nav {
+    margin: 0 auto;
+  }
+  #mainNav .navbar-nav > li {
+    text-align: center;
+    display: block;
+  }
+  #mainNav .navbar-nav > li > a {
+    padding: 15px !important;
+  }
+  #mainNav .navbar-nav > li > a:before {
+    display: none;
+  }
+  #mainNav .navbar-brand {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+  #mainNav .navbar-brand img {
+    height: 37px;
+  }
+  #mainNav.navbar-fixed-top .navbar-brand {
+    padding-left: 15px;
+  }
+  #mainNav.navbar-home .navbar-center,
+  #mainNav.navbar-not-home .navbar-center,
+  #mainNav.navbar-home .navbar-number,
+  #mainNav.navbar-not-home .navbar-number {
+    float: none;
+    position: relative;
+    left: 0;
+    transform: none;
+    min-width: 100%;
+    display: block;
+    padding: 0;
+  }
+  #mainNav.navbar-home .navbar-number,
+  #mainNav.navbar-not-home .navbar-number {
+    padding: 0;
+  }
+  #mainNav.navbar-home .navbar-number > li,
+  #mainNav.navbar-not-home .navbar-number > li {
+    padding: 15px;
+    height: 51px;
+  }
+  #mainNav.navbar-home .navbar-number > li,
+  #mainNav.navbar-not-home .navbar-number > li,
+  #mainNav.navbar-home .navbar-center > li,
+  #mainNav.navbar-not-home .navbar-center > li {
+    border-top: 1px solid #fff;
+  }
+  #mainNav .navbar-collapse {
+    background: #0f0e0e;
+    padding: 0;
+  }
+  header .intro-logo {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #company .features {
+    margin-top: 20px;
+  }
+  #company .features > div {
+    width: 25%;
+  }
+  #company .company-heading {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  #video .iframe-container {
+    margin: 0 40px;
+    width: auto;
+  }
+  #video .carousel-control {
+    width: 40px;
+  }
+  #portfolio p {
+    text-align: justify;
+  }
+  #portfolio .links a {
+    margin: 0 !important;
+  }
+  #portfolio .image-col img,
+  #contacts .feedback-col {
+    height: auto !important;
+    width: 100%;
+  }
+  .text-col .container {
+    max-width: 100%;
+  }
+  #contacts .text-col {
+    padding: 20px;
+  }
+  #contacts .links {
+    margin-top: 20px;
+  }
+  .page-content {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+  }
+  .page-content p {
+    text-align: justify;
+    font-size: 14px;
+  }
+  .page-content .row > div.text-col,
+  .page-content .row > div.image-col {
+    padding-right: 0;
+  }
+  .page-content .links {
+    text-align: center;
+  }
+  .page-content h1,
+  .page-content h2 {
+    text-align: center;
+  }
+  .page-content h2 {
+    font-size: 24px;
+  }
+  #gallery-page .page-content .gallery-row {
+    flex-direction: column;
+  }
+  #gallery-page .page-content .back-link {
+    top: 90px;
+  }
+  #gallery-page .page-content .gallery-img {
+    margin: 0;
+  }
+  #gallery-page .page-content figcaption {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 530px) {
+  #company .features > div {
+    width: 50%;
+  }
+}

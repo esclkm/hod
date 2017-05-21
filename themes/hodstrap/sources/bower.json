@@ -1,0 +1,17 @@
+{
+  "name": "vezdehod",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "redYulia <yulia.shavyrova@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

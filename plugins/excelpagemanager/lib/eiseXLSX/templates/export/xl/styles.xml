@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<styleSheet xml:space="preserve" xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+ <numFmts count="1">
+  <numFmt numFmtId="164" formatCode="General"/>
+ </numFmts>
+ <fonts count="2">
+  <font>
+   <name val="Calibri"/>
+   <sz val="10"/>
+   <u val="none"/>
+   <color rgb="FF000000"/>
+  </font>
+  <font>
+   <name val="Calibri"/>
+   <sz val="10"/>
+   <b val="true"/>
+   <u val="none"/>
+   <color rgb="FF000000"/>
+  </font>
+ </fonts>
+ <fills count="3">
+  <fill>
+   <patternFill patternType="none">
+    <fgColor rgb="FFFFFFFF"/>
+    <bgColor rgb="FF000000"/>
+   </patternFill>
+  </fill>
+  <fill>
+   <patternFill patternType="gray125">
+    <fgColor rgb="FFFFFFFF"/>
+    <bgColor rgb="FF000000"/>
+   </patternFill>
+  </fill>
+  <fill>
+   <patternFill patternType="solid">
+    <fgColor rgb="FFD7E4BC"/>
+    <bgColor rgb="FF000000"/>
+   </patternFill>
+  </fill>
+ </fills>
+ <borders count="2">
+  <border outline="true"/>
+  <border outline="true">
+   <left style="thin">
+    <color rgb="FF000000"/>
+   </left>
+   <right style="thin">
+    <color rgb="FF000000"/>
+   </right>
+   <top style="thin">
+    <color rgb="FF000000"/>
+   </top>
+   <bottom style="thin">
+    <color rgb="FF000000"/>
+   </bottom>
+  </border>
+ </borders>
+ <cellStyleXfs count="5">
+  <xf numFmtId="0" fontId="0" fillId="0" borderId="0"/>
+ </cellStyleXfs>
+ <cellXfs count="5">
+  <xf xfId="0" fontId="0" numFmtId="164" fillId="0" borderId="0" applyFont="0" applyNumberFormat="0" applyFill="0" applyBorder="0" applyAlignment="0">
+   <alignment horizontal="general" vertical="bottom" textRotation="0" wrapText="false" shrinkToFit="false"/>
+  </xf>
+  <xf xfId="0" fontId="0" numFmtId="164" fillId="1" borderId="0" applyFont="0" applyNumberFormat="0" applyFill="1" applyBorder="0" applyAlignment="0">
+   <alignment horizontal="general" vertical="bottom" textRotation="0" wrapText="false" shrinkToFit="false"/>
+  </xf>
+  <xf xfId="0" fontId="1" numFmtId="164" fillId="0" borderId="0" applyFont="1" applyNumberFormat="0" applyFill="0" applyBorder="0" applyAlignment="0">
+   <alignment horizontal="general" vertical="bottom" textRotation="0" wrapText="false" shrinkToFit="false"/>
+  </xf>
+  <xf xfId="0" fontId="1" numFmtId="164" fillId="2" borderId="1" applyFont="1" applyNumberFormat="0" applyFill="1" applyBorder="1" applyAlignment="0">
+   <alignment horizontal="general" vertical="bottom" textRotation="0" wrapText="false" shrinkToFit="false"/>
+  </xf>
+  <xf xfId="0" fontId="0" numFmtId="164" fillId="0" borderId="1" applyFont="0" applyNumberFormat="0" applyFill="0" applyBorder="1" applyAlignment="0">
+   <alignment horizontal="general" vertical="bottom" textRotation="0" wrapText="false" shrinkToFit="false"/>
+  </xf>
+ </cellXfs>
+ <cellStyles count="1">
+  <cellStyle name="Normal" xfId="0" builtinId="0"/>
+ </cellStyles>
+ <dxfs count="0"/>
+ <tableStyles defaultTableStyle="TableStyleMedium9" defaultPivotStyle="PivotTableStyle1"/>
+</styleSheet>

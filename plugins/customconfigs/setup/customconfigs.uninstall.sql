@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS `cot_customconfigs`, `cot_customconfigs_cats`;
