@@ -14,7 +14,7 @@
 		<meta http-equiv="content-type" content="{HEADER_META_CONTENTTYPE}; charset=UTF-8" />
 		
 		<link rel="canonical" href="{HEADER_CANONICAL_URL}" />
-		
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
 		{HEADER_BASEHREF}
 		{HEADER_HEAD}
 
@@ -29,14 +29,73 @@
 
 	<body class="<!-- IF {PHP.env.location} != 'home'-->notindexpage<!-- ELSE -->indexpage<!-- ENDIF -->">
 		{PHP.cfg.customjs_body}
+			
+			
 	<a name="toTop" id="toTop" title="наверх"><i class="fa fa-arrow-up"></i></a>
+	
+	
 	<img src="{PHP.cfg.mainurl}/{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/images/logoBig.jpg" alt="{HEADER_TITLE}" style="display:none;">
 <!-- ENDIF -->
-		<header>
-			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div id="{PHP.env.location}-page">
+			<nav id="mainNav" class="navbar navbar-custom navbar-static-top navbar-home">
+				<div class="container">
+					<div class="navbar-header page-scroll">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="sr-only">Toggle navigation</span>
+						</button>
+						<a class="navbar-brand page-scroll visible-xs" href="#page-top"><img class="img-responsive" src="assets/images/logo-min.png" alt=""></a>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-center">
+							<li>
+								<a class="page-scroll" href="#company">Компания</a>
+							</li>
+							<li>
+								<a class="page-scroll" href="#portfolio">Реализованные проекты</a>
+							</li>
+							<li>
+								<a class="page-scroll" href="#blog">Блог</a>
+							</li>
+							<li>
+								<a class="page-scroll" href="#rent">Аренда</a>
+							</li>
+							<li>
+								<a class="page-scroll" href="#contacts">Контакты</a>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-number">
+							<li>+7 812 459-98-95</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- Header -->
+			<header id="page-top">
+				<div class="container text-center">
+					<div class="row">
+						<div class="intro-logo">
+							<img src="{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/images/logo.png" alt="" class="img-responsive">
+						</div>
+					</div>
+					<div class="row">
+						<div class="intro-text">
+							<p>Восстановление, модернизация и строительство снегоболотоходов-амфибий</p>
+							<button class="btn intro-btn white-btn">Оставить заявку</button>
+							<a href=""><i class="small-icon white-arrow"></i></a>
+						</div> 
+					</div>
+
+				</div>
+			</header>
+    
+		<div>
+			<nav class="navbar2 navbar2-default navbar-fixed-top" role="navigation">
 				<div class="container container-fluid">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
+					<div class="navbar2-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
@@ -68,7 +127,7 @@
 				</div><!-- /.container-fluid -->
 			</nav>
 			<div class="clearfix"></div>
-		</header>
+		</div>
 		
 
 

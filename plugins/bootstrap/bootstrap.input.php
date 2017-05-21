@@ -19,13 +19,14 @@
 defined('COT_CODE') or die('Wrong URL.');
 
 require_once $cfg['plugins_dir']."/bootstrap/lessphp/Less.php";
-
+//cot_print('111');
 function compile_botstrap_less ($theme, $input, $output='', $compress =false)
 {
 	global $cfg;
 	$output = empty($output) ? $input : $output;
 	$output = $cfg['themes_dir'].'/'.$theme.'/css/'.$output.'.css';
 	$input = $cfg['themes_dir'].'/'.$theme.'/less/'.$input.'.less';
+//	cot_print($output,$input);
 	if (file_exists($output) && file_exists($input))
 	{
 		$filetimecss = filemtime($output);
