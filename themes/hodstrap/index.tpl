@@ -10,28 +10,28 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 text-center">
-                    <p>Наша компания осуществляет реставрацию, модернизацию и продажу снегоболотоходов-амфибий разработанных советскими конструкторами с 50% запасом прочности для нужд армии. Это надёжные, проходимые, мощные и легендарные вездеходы которые выпускались в СССР в период с 1961 по настоящее время.</p>
+                    <p>{PHP.cfg.ind_sl1_text}</p>
                 </div>
                 <div class="col-xs-12 text-center">
-                    <a href="/about.html">Подробнее о компании</a>
+                    <a href="{PHP|cot_url('page', 'c=system&al=kompaniya')}">{PHP.cfg.ind_sl1_but}</a>
                 </div>
             </div>
             <div class="row features">
                 <div class="col-xs-12 col-sm-3 text-center">
                     <i class="circle-icon tools"></i>
-                    <h2 class="company-heading">Наличие запчастей</h2>
+                    <h2 class="company-heading">{PHP.cfg.ind_sl1_img1}</h2>
                 </div>
                 <div class="col-xs-12 col-sm-3 text-center">
                     <i class="circle-icon medal"></i>
-                    <h2 class="company-heading">Гарантия на технику</h2>
+                    <h2 class="company-heading">{PHP.cfg.ind_sl1_img2}</h2>
                 </div>
                 <div class="col-xs-12 col-sm-3 text-center">
                     <i class="circle-icon repairs"></i>
-                    <h2 class="company-heading">Все виды ремонта</h2>
+                    <h2 class="company-heading">{PHP.cfg.ind_sl1_img3}</h2>
                 </div>
                 <div class="col-xs-12 col-sm-3 text-center">
                     <i class="circle-icon bus"></i>
-                    <h2 class="company-heading">Быстрая доставка</h2>
+                    <h2 class="company-heading">{PHP.cfg.ind_sl1_img4}</h2>
                 </div>
             </div>
         </div>
