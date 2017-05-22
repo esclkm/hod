@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=latin,cyrillic");
 /**
  * google-material-color v1.2.2
  * https://github.com/danlevan/google-material-color
@@ -6237,19 +6236,6 @@ button.close {
     display: none !important;
   }
 }
-.navbar-default .badge {
-  background-color: #fff;
-  color: #fefdfd;
-}
-.navbar-inverse .badge {
-  background-color: #fff;
-  color: #d4a97a;
-}
-@media (max-width: 767px) {
-  .navbar .dropdown-menu a {
-    color: #fff;
-  }
-}
 .image-container {
   position: absolute;
   padding: 0 !important;
@@ -6750,7 +6736,7 @@ header .white-arrow {
   top: 43px;
 }
 #portfolio .links {
-  margin-top: 40px;
+  /*margin-top: 40px;*/
 }
 #portfolio .links a {
   font-family: 'PFDinTextCompPro-Regular', sans-serif;
@@ -6779,7 +6765,8 @@ header .white-arrow {
 #portfolio .links a:last-child {
   margin-right: 26px;
 }
-#portfolio p {
+#portfolio p,
+#portfolio table {
   font-family: 'PFDinTextCompPro-Light', sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -6787,9 +6774,14 @@ header .white-arrow {
   margin: 21px 0 27px;
 }
 @media (max-width: 767px) {
-  #portfolio p {
+  #portfolio p,
+  #portfolio table {
     font-size: 18px;
   }
+}
+#portfolio p td,
+#portfolio table td {
+  padding: 2px 6px;
 }
 .text-col {
   height: auto;

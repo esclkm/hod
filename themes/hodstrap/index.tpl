@@ -37,27 +37,7 @@
         </div>
     </section>
     <section id="portfolio" class="clearfix">
-        <div class="col-xs-12 col-sm-6 text-col left-col">
-            <div class="container">
-                <a class="arrow" href=""><i class="small-icon black-arrow"></i></a>
-                <h1 class="text-left">БТР-Д</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
-                <ul class="list-unstyled list-underline">
-                    <li>in reprehenderit in voluptate velit </li>
-                    <li>esse cillum dolore eu fugiat </li>
-                    <li>nulla pariatur. Excepteur sint </li>
-                    <li>occaecat cupidatat non proident, </li>
-                </ul>
-                <div class="links clearfix">
-                    <a href=""><span>Посмотреть проект</span> →</a>
-                    <a href=""><span>Реализованные проекты</span> →</a>
-                    <a href=""><span>Аренда</span> →</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 image-col right-col">
-            <img src="themes/hodstrap/images/pic1.jpg" alt="" class="img-responsive">   
-        </div>
+		{PHP|pp_list('projects', 1, 'RAND()', '', 'projects')}
     </section>
     
     <section id="gallery">
