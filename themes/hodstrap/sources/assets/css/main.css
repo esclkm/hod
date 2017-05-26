@@ -26,10 +26,29 @@ body {
 p {
   line-height: 1.3;
 }
-h1 {
-  font-family: 'PFDinTextCompPro-Medium', sans-serif;
-  font-size: 41px;
-  text-transform: uppercase;
+.h1 {
+  font-family: 'PFDinTextCompPro-Medium', sans-serif !important;
+  font-size: 41px !important;
+  line-height: 41px !important;
+  text-transform: uppercase !important;
+  margin-top: 20px !important;
+  margin-bottom: 10px !important;
+}
+.h2 {
+  font-size: 18px !important;
+  text-transform: uppercase !important;
+  font-weight: 600 !important;
+  margin-top: 4px !important;
+  margin-bottom: 30px !important;
+}
+section {
+  position: relative;
+}
+table tr {
+  cursor: pointer;
+}
+table tr td {
+  font-size: 14px;
 }
 .menu-items {
   font-family: 'PFDinTextCompPro-Medium', sans-serif;
@@ -409,7 +428,12 @@ header .white-arrow {
   height: auto;
 }
 #portfolio .image-col {
-  padding: 0;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
 #portfolio .image-col img {
   width: 100%;
@@ -464,12 +488,15 @@ header .white-arrow {
 }
 .text-col {
   height: auto;
-  padding: 20px 40px;
-}
-.text-col .container {
-  max-width: 600px;
-  width: 100%;
   padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.text-col.left-col {
+  padding-right: 40px;
+}
+.text-col.right-col {
+  padding-left: 40px;
 }
 .left-col .container {
   float: right;
@@ -580,6 +607,9 @@ header .white-arrow {
   text-decoration: none;
 }
 #contacts {
+  background: -webkit-linear-gradient(left, #fff 50%, #0f0f0f 50%);
+  background: -o-linear-gradient(left, #fff 50%, #0f0f0f 50%);
+  background: linear-gradient(to right, #fff 50%, #0f0f0f 50%);
   /* active state */
   /* active state */
 }
@@ -589,6 +619,12 @@ header .white-arrow {
 }
 #contacts .text-col {
   min-height: 480px;
+}
+#contacts .text-col p {
+  font-family: 'PFDinTextCompPro-Medium', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
 }
 #contacts .address {
   padding: 27px 0;
@@ -615,12 +651,6 @@ header .white-arrow {
 }
 #contacts .tab-content > .tab-pane {
   margin-top: 14px;
-}
-#contacts p {
-  font-family: 'PFDinTextCompPro-Medium', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  margin: 0;
 }
 #contacts .rights {
   font-size: 11px;
@@ -773,21 +803,21 @@ header .white-arrow {
   padding-right: 15px;
   padding-top: 4px;
 }
-.page-content p {
+.page-content p,
+.page-content li {
   font-family: 'OpenSans', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
+}
+.page-content ul {
+  padding-left: 15px;
+}
+.page-content ul li {
+  padding-left: 10px;
 }
 .page-content figcaption {
   font-family: 'PFDinTextCompPro-Light', sans-serif;
   font-style: italic;
   margin-top: 20px;
-}
-.page-content h2 {
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-top: 4px;
-  margin-bottom: 30px;
 }
 .page-content article {
   border: 0;
@@ -801,7 +831,7 @@ header .white-arrow {
   padding-top: 124px;
   padding-bottom: 24px;
 }
-#portfolio-page .page-content h1 {
+#portfolio-page .page-content .h1 {
   margin-bottom: 0;
 }
 #portfolio-page .page-content .row {
@@ -811,17 +841,17 @@ header .white-arrow {
 #portfolio-page .page-content p {
   margin: 0 auto 24px;
 }
+.back-link {
+  position: absolute;
+  right: 15px;
+  top: 56px;
+}
 #gallery-page .page-content {
   padding-top: 158px;
   padding-bottom: 115px;
 }
-#gallery-page .page-content h1 {
+#gallery-page .page-content .h1 {
   margin-bottom: 40px;
-}
-#gallery-page .page-content .back-link {
-  position: absolute;
-  right: 15px;
-  top: 56px;
 }
 #gallery-page .page-content .gallery-row {
   display: flex;
@@ -840,4 +870,50 @@ header .white-arrow {
 #gallery-page .page-content figcaption {
   margin-top: 14px;
   margin-bottom: 0;
+}
+.table-col .table > tbody > tr > td,
+.table-col .table > tbody > tr > th,
+.table-col .table > tfoot > tr > td,
+.table-col .table > tfoot > tr > th,
+.table-col .table > thead > tr > td,
+.table-col .table > thead > tr > th {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  max-width: 65px;
+  font-size: 12px;
+  padding: 11px 15px;
+}
+#project-page .page-content .row > div.image-col {
+  padding-right: 0px;
+}
+#project-page #specs {
+  padding: 45px 0;
+}
+#project-page #specs .h2 {
+  padding-left: 45px;
+}
+#gallery-video {
+  min-height: 510px;
+  height: 100%;
+}
+#gallery-video .left-col,
+#gallery-video .right-col {
+  height: 100%;
+  max-height: 510px;
+  padding: 0;
+}
+#gallery-video .left-col img,
+#gallery-video .right-col img {
+  width: 100%;
+  object-fit: cover;
+  height: 510px;
+}
+#gallery-video .left-col .iframe-container,
+#gallery-video .right-col .iframe-container {
+  height: 510px;
+}
+#gallery-video .left-col .iframe-container iframe,
+#gallery-video .right-col .iframe-container iframe {
+  width: 100%;
+  height: 100%;
 }

@@ -1,31 +1,20 @@
 @media (min-width: 1280px) {
-  .container {
-    width: 1280px;
-  }
   .text-col .container {
     padding: 0 15px;
   }
-  #mainNav.navbar-not-home .container {
-    width: 1280px;
-  }
-}
-@media (min-width: 1200px) {
-  #home-page .container {
-    width: 100%;
-  }
 }
 @media (min-width: 1086px) and (max-width: 1280px) {
-  .container {
-    width: 1086px;
-  }
-  #mainNav.navbar-not-home .container {
-    width: 1086px;
-  }
+  /*.container {
+        width: 1086px;
+    }
+    #mainNav.navbar-not-home .container {
+        width: 1086px;
+    }*/
 }
 @media (max-width: 1200px) {
-  #mainNav.navbar-home .container {
-    width: 100%;
-  }
+  /*#mainNav.navbar-home .container {
+        width: 100%;
+    }*/
 }
 @media (max-width: 1086px) {
   #mainNav.navbar-not-home .container {
@@ -50,6 +39,18 @@
   #contacts .rights {
     bottom: 5px;
     top: auto;
+  }
+  .page-content .row > div.text-col,
+  .page-content .row > div.image-col {
+    padding-right: 20px;
+  }
+  .table-col .table > tbody > tr > td,
+  .table-col .table > tbody > tr > th,
+  .table-col .table > tfoot > tr > td,
+  .table-col .table > tfoot > tr > th,
+  .table-col .table > thead > tr > td,
+  .table-col .table > thead > tr > th {
+    max-width: none;
   }
 }
 @media (max-width: 870px) {
@@ -151,6 +152,10 @@
   #portfolio p {
     text-align: justify;
   }
+  #portfolio .image-col {
+    position: relative;
+    width: 100%;
+  }
   #portfolio .links a {
     margin: 0 !important;
   }
@@ -162,11 +167,17 @@
   .text-col .container {
     max-width: 100%;
   }
+  #contacts {
+    background: #fff;
+  }
   #contacts .text-col {
     padding: 20px;
   }
   #contacts .links {
     margin-top: 20px;
+  }
+  #contacts .container {
+    padding: 0;
   }
   .page-content {
     padding-top: 70px !important;
@@ -190,17 +201,32 @@
   .page-content h2 {
     font-size: 24px;
   }
+  .back-link {
+    top: 0px;
+  }
   #gallery-page .page-content .gallery-row {
     flex-direction: column;
-  }
-  #gallery-page .page-content .back-link {
-    top: 90px;
   }
   #gallery-page .page-content .gallery-img {
     margin: 0;
   }
   #gallery-page .page-content figcaption {
     margin-bottom: 20px;
+  }
+  .table-col .table {
+    margin-bottom: 0;
+  }
+  #gallery-video .left-col,
+  #gallery-video .right-col {
+    max-height: 350px;
+  }
+  #gallery-video .left-col img,
+  #gallery-video .right-col img {
+    height: 350px;
+  }
+  #gallery-video .left-col .iframe-container,
+  #gallery-video .right-col .iframe-container {
+    height: 350px;
   }
 }
 @media (max-width: 530px) {

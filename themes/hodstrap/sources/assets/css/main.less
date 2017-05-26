@@ -31,12 +31,32 @@ body {
 p {
     line-height: 1.3;
 }
-h1 {
-    font-family: @medium-font, sans-serif;
-    font-size: 41px;
-    text-transform: uppercase;
+.h1 {
+    font-family: @medium-font, sans-serif !important;
+    font-size: 41px !important;
+    line-height: 41px !important;
+    text-transform: uppercase !important;
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
 }
-
+.h2 {
+    font-size: 18px !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;    
+    margin-top: 4px !important;
+    margin-bottom: 30px !important;
+}
+section {
+    position: relative;
+}
+table {
+    tr {
+        cursor: pointer;
+        td {
+            font-size: 14px;
+        }
+    }
+}
 
 .menu-items {
     font-family: @medium-font, sans-serif;
@@ -384,7 +404,12 @@ header {
 #portfolio {
     height: auto;
     .image-col {
-        padding: 0;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
         img {
             width: 100%;
             object-fit: cover;
@@ -423,11 +448,14 @@ header {
 
 .text-col {
     height: auto;
-    padding: 20px 40px;
-    .container {
-        max-width: 600px;
-        width: 100%;
-        padding: 0;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &.left-col {
+        padding-right: 40px;
+    }
+    &.right-col {
+        padding-left: 40px;
     }
 }
 .left-col .container {
@@ -532,12 +560,21 @@ header {
     }
 }
 #contacts {
+    background: -webkit-linear-gradient(left, #fff 50%, #0f0f0f 50%);
+    background: -o-linear-gradient(left, #fff 50%, #0f0f0f 50%);
+    background: linear-gradient(to right, #fff 50%, #0f0f0f 50%);
     .feedback-col {
         background-color: #0f0f0f;
         color: #fff;
     }
     .text-col {
         min-height: 480px;
+        p {
+            font-family: @medium-font, sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0;
+        }
     }
     .address {
         padding: 27px 0;
@@ -566,12 +603,6 @@ header {
     }
     .tab-content>.tab-pane {
         margin-top: 14px;
-    }
-    p {
-        font-family: @medium-font, sans-serif;
-        font-size: 16px;
-        line-height: 24px;
-        margin: 0;
     }
     .rights {
         font-size: 11px;
@@ -704,21 +735,20 @@ header {
             padding-top: 4px;
         }
     }
-    p {
+    p, li {
         font-family: 'OpenSans', sans-serif;
-        font-size: 12px;
+        font-size: 14px;
+    }
+    ul {
+        padding-left: 15px;
+        li {
+            padding-left: 10px;
+        }
     }
     figcaption {
         font-family: @light-font, sans-serif;
         font-style: italic;
         margin-top: 20px;
-    }
-    h2 {
-        font-size: 18px;
-        text-transform: uppercase;
-        font-weight: 600;    
-        margin-top: 4px;
-        margin-bottom: 30px;
     }
     article {
         border: 0;
@@ -732,7 +762,7 @@ header {
 #portfolio-page .page-content {
     padding-top: 124px;
     padding-bottom: 24px;
-    h1 {
+    .h1 {
         margin-bottom: 0;
     }
     .row {
@@ -743,18 +773,19 @@ header {
         margin: 0 auto 24px;
     }
 }
+.back-link {
+    position: absolute;
+    right: 15px;
+    top: 56px;
+}
 #gallery-page {
     .page-content {
         padding-top: 158px;
         padding-bottom: 115px;
-        h1 {
+        .h1 {
             margin-bottom: 40px;
         }
-        .back-link {
-            position: absolute;
-            right: 15px;
-            top: 56px;
-        }
+        
         .gallery-row {
             display: flex;
             flex-direction: row;
@@ -775,3 +806,52 @@ header {
         }
     }
 }
+.table-col {
+    .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+        border: 0;
+        border-bottom: 1px solid #ddd;
+        max-width: 65px;
+        font-size: 12px;
+        padding: 11px 15px;
+    }
+}
+#project-page {
+    .page-content {
+        .row > div {
+            &.image-col {
+                padding-right: 0px;
+            }
+        }
+    }
+    #specs {
+        padding: 45px 0;
+        .h2 {
+            padding-left: 45px;
+        }
+    }
+}
+@gallery-video-height: 510px;
+#gallery-video {
+    min-height: @gallery-video-height;
+    height: 100%;
+    .left-col, .right-col {
+        height: 100%;
+        max-height: @gallery-video-height;
+        padding: 0;
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: @gallery-video-height;
+        }
+        .iframe-container {
+            height: @gallery-video-height;
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    
+}
+    
+
