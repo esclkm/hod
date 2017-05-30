@@ -1,4 +1,213 @@
 <!-- BEGIN: MAIN -->
+    
+    <section class="page-content">
+        <div class="container">
+            <div class="row">
+                <p class="h1">СНЕГОБОЛОТОХОД ТТМ-3 ПО</p>
+            </div>
+            <a href="" class="back-link">← <span>Назад к категориям</span></a>
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 text-col">
+                    <p class="h2">Гусеничный снегоболотоход с пожарным оборудованием</p>
+                    <p>Плавающая гусеничная машина с оборудованием для тушения пожаров в условиях труднопроходимой местности, обладающая высокой степенью проходимости, оснащенная кабиной на 6 мест и цельнометаллическим салоном с пожарным оборудованием. В салоне можно организовать два полноценных спальных места.</p>
+                    <p>Эксплуатация: на грунтах с низкой несущей способностью (в том числе снежная целина с неограниченной глубиной снежного покрова, сыпучие пески, любые болота и открытые водоемы).</p>
+                    <p>Транспортировка снегоболотохода на большие расстояния может производиться в кузове автомобилей типа КАМАЗ или МАЗ. В базовой комплектации машина оснащена рулевым колесом с ГУРом, а также гусеницами с открытым шарниром (ОШ) с эластичными уширителями шириной 760 мм.</p>
+                    <p class="strong">По требованию Заказчика возможны следующие варианты комплектации:</p>
+                    <ul>
+                        <li>гусеницы с резинометаллическим шарниром (РМШ) с эластичными уширителями шириной 760 мм для болот, снежной целины, тундры и песка;</li>
+                        <li>гусеницы с открытым шарниром (ОШ) или с резинометаллическим шарниром (РМШ) без уширителей шириной 390 мм для грунтовых, каменистых и лесных дорог, неглубокого снега и песка;</li>
+                        <li>асфальтоходные гусеницы (без уширителей с резиновыми башмаками);</li>
+                        <li>электрическая лебедка с тяговым усилием до 5000 кг;</li>
+                        <li>защита стекол;</li>
+                        <li>кондиционер;</li>
+                        <li>аудио-, видео оборудование и GPS-навигация.</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 image-col">
+                    <figure class="img">
+                        <img alt="" src="assets/images/kv.jpg" class="img-responsive">
+                        <figcaption class="text-center">Погрузка снегоболотохода на поезд</figcaption>
+                    </figure>
+                </div>            
+            </div>
+        </div>
+    </section>
+    
+    <section id="specs">
+        <div class="container">
+            <div class="row">
+                <p class="h2">Технические характеристики Снегоболотоход ТТМ-3 ПО</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 table-col left-col">
+                <table class="table table-hover">
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-xs-12 col-sm-6 table-col right-col">
+                <table class="table table-hover">
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузоподъемность, кг</td>
+                        <td>3000</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <section id="gallery-video" class="clearfix">
+        <div class="col-xs-12 col-sm-6 left-col">
+            <img src="assets/images/kv.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="col-xs-12 col-sm-6 right-col">
+            <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/xzTuMqODyd0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <section id="gallery">
+        <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#galleryCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#galleryCarousel" data-slide-to="1"></li>
+                <li data-target="#galleryCarousel" data-slide-to="2"></li>
+                <li data-target="#galleryCarousel" data-slide-to="3"></li>
+                <li data-target="#galleryCarousel" data-slide-to="4"></li>
+                <li data-target="#galleryCarousel" data-slide-to="5"></li>
+            </ol> 
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="assets/images/pic2.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="assets/images/pic2.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="assets/images/pic2.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="assets/images/pic2.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="assets/images/pic2.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="assets/images/pic2.jpg" alt="" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
 <div class="page-header">
 		<div class="container container-fluid">		
 		<h1>

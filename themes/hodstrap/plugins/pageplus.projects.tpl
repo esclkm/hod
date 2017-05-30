@@ -2,18 +2,18 @@
 
 	<!-- BEGIN: PAGE_ROW -->
 	
-	
+		<div class="container">
 	        <div class="col-xs-12 col-sm-6 text-col left-col">
-            <div class="container">
+            
                 <a class="arrow" href="{PAGE_ROW_URL}"><i class="small-icon black-arrow"></i></a>
-                <h1 class="text-left">
+                <p class=" h1 text-left">
 					{PAGE_ROW_SHORTTITLE}
 					<!-- IF {PHP.usr.isadmin} -->
 					<a class="small pull-right" href="{PAGE_ROW_ADMIN_EDIT_URL}" title="{PHP.L.Edit}">
 						<span class="glyphicon glyphicon-edit"></span>
 					</a>
 					<!-- ENDIF -->	
-				</h1>
+				</p>
                 <div>{PAGE_ROW_TEXT_SHORT}</div>
 				<div>{PAGE_ROW_HARAKTERISTIKI_SHORT}</div>
                <!-- <ul class="list-unstyled list-underline">
@@ -29,7 +29,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6 image-col right-col">
+        <div class="image-col right-col">
             <img src="<!-- IF {PAGE_ROW_MAVATAR} -->{PAGE_ROW_MAVATAR.1|cot_mav_thumb($this, 640, 450, crop)}<!-- ELSE -->{PHP.cfg.mainurl}/themes/{PHP.usr.theme}/images/no-image.png<!-- ENDIF -->" alt="" class="img-responsive">   
         </div>
 	

@@ -1,4 +1,5 @@
 <!-- BEGIN: MAIN -->
+
     <section id="company">
         <div class="container">
             <div class="row">
@@ -19,19 +20,19 @@
             <div class="row features">
                 <div class="col-xs-12 col-sm-3 text-center">
                     <i class="circle-icon tools"></i>
-                    <h2 class="company-heading">{PHP.cfg.ind_sl1_img1}</h2>
+                    <p class="h2 company-heading">{PHP.cfg.ind_sl1_img1}</p>
                 </div>
                 <div class="col-xs-12 col-sm-3 text-center">
                     <i class="circle-icon medal"></i>
-                    <h2 class="company-heading">{PHP.cfg.ind_sl1_img2}</h2>
+                    <p class="h2 company-heading">{PHP.cfg.ind_sl1_img2}</p>
                 </div>
                 <div class="col-xs-12 col-sm-3 text-center">
                     <i class="circle-icon repairs"></i>
-                    <h2 class="company-heading">{PHP.cfg.ind_sl1_img3}</h2>
+                    <p class="h2 company-heading">{PHP.cfg.ind_sl1_img3}</p>
                 </div>
                 <div class="col-xs-12 col-sm-3 text-center">
                     <i class="circle-icon bus"></i>
-                    <h2 class="company-heading">{PHP.cfg.ind_sl1_img4}</h2>
+                    <p class="h2 company-heading">{PHP.cfg.ind_sl1_img4}</p>
                 </div>
             </div>
         </div>
@@ -75,7 +76,7 @@
     
     <section id="video">
         <div id="videoCarousel" class="carousel slide clearfix" data-ride="carousel" data-interval="false">
-            <h1 class="text-center">Последние видео</h1>
+            <p class="h1 text-center">Последние видео</p>
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
                     <div class="iframe-container">

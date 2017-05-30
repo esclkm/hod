@@ -37,7 +37,8 @@
 	<img src="{PHP.cfg.mainurl}/{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/images/logoBig.jpg" alt="{HEADER_TITLE}" style="display:none;">
 <!-- ENDIF -->
 		<div id="{PHP.env.location}-page">
-			<nav id="mainNav" class="navbar navbar-custom navbar-static-top navbar-home">
+			
+			<nav id="mainNav" class="navbar navbar-custom navbar-static-top <!-- IF {PHP.env.location} == 'home' --> navbar-home<!-- ELSE--> navbar-not-home<!-- ENDIF-->">
 				<div class="container">
 					<div class="navbar-header page-scroll">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
@@ -46,12 +47,12 @@
 							<span class="icon-bar"></span>
 							<span class="sr-only">Toggle navigation</span>
 						</button>
-						<a class="navbar-brand page-scroll visible-xs" href="{PHP.cfg.mainurl}"><img class="img-responsive" src="{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/images/logo-min.png" alt=""></a>
+						<a class="navbar-brand page-scroll <!-- IF {PHP.env.location} == 'home' -->visible-xs<!-- ENDIF-->" href="{PHP.cfg.mainurl}"><img class="img-responsive" src="{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/images/logo-min.png" alt=""></a>
 					</div>
 					<div class="collapse navbar-collapse" id="navbar-collapse-1">
 						<ul class="nav navbar-nav navbar-center">
 							<li><a class="page-scroll" href="{PHP|cot_url('page', 'c=system&al=kompaniya')}">Компания</a></li>
-							<li><a class="page-scroll" href="{PHP|cot_url('page', 'c=projects')}">Реализованные проекты</a></li>
+							<li><a class="page-scroll" href="{PHP|cot_url('page', 'c=projects')}"><!-- IF {PHP.usr.isadmin} -->Проекты<!-- ELSE -->Реализованные проекты<!-- ENDIF --></a></li>
 							<li><a class="page-scroll" href="{PHP|cot_url('page', 'c=blog')}">Блог</a></li>
 							<li><a class="page-scroll" href="{PHP|cot_url('page', 'c=system&al=arenda')}">Аренда</a></li>
 							<li><a class="page-scroll" href="{PHP|cot_url('page', 'e=contact')}">Контакты</a></li>
@@ -67,6 +68,7 @@
 					</div>
 				</div>
 			</nav>
+			<!-- IF {PHP.env.location} == 'home' -->
 			<!-- Header -->
 			<header id="page-top">
 				<div class="container text-center">
@@ -85,5 +87,5 @@
 
 				</div>
 			</header>
-    
+			<!-- ENDIF -->				
 <!-- END: HEADER -->
