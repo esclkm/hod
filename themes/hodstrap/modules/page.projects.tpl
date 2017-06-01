@@ -43,7 +43,7 @@
         <div class="col-xs-12 <!-- IF {PAGE_YOUTUBE|mb_strlen} >10 -->col-sm-6<!-- ENDIF --> left-col">
 			
 			<div class="iframe-container1 embed-responsive embed-responsive-4by3">
-                <iframe class="embed-responsive-item" src="{PAGE_3D}" frameborder="0" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="{PAGE_3D}/embed" frameborder="0" allowfullscreen></iframe>
             </div>		
         </div>
 		<!-- ENDIF -->
@@ -51,7 +51,7 @@
         <div class="col-xs-12 <!-- IF {PAGE_3D|mb_strlen} >10 -->col-sm-6<!-- ENDIF --> right-col">
 			
 			<div class="iframe-container1 embed-responsive embed-responsive-4by3">
-                <iframe class="embed-responsive-item" src="{PAGE_YOUTUBE}" frameborder="0" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{PAGE_YOUTUBE|youtube_id_from_url}" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
 		<!-- ENDIF -->

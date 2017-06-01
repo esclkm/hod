@@ -78,23 +78,13 @@
         <div id="videoCarousel" class="carousel slide clearfix" data-ride="carousel" data-interval="false">
             <p class="h1 text-center">Последние видео</p>
             <div class="carousel-inner" role="listbox">
-                <div class="item active">
+				<!-- FOR {KEY}, {VALUE} IN {PHP.cfg.ind_sl4_youtube|string_split} -->
+                <div class="item <!--IF {KEY} == 0 -->active<!-- ENDIF -->">
                     <div class="iframe-container">
-                        <iframe src="https://www.youtube.com/embed/xzTuMqODyd0" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/{VALUE|youtube_id_from_url}" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
-
-                <div class="item">
-                    <div class="iframe-container">
-                        <iframe src="https://www.youtube.com/embed/xzTuMqODyd0" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="iframe-container">
-                        <iframe src="https://www.youtube.com/embed/xzTuMqODyd0" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
+				<!-- ENDFOR -->
             </div>
 
             <!-- Left and right controls -->
@@ -114,6 +104,8 @@
             </div>            
         </div>
     </section>
+					
+					
 <!-- END: MAIN -->
 <!-- BEGIN: OLD -->
 <div id="slide-5" class="section light ">
