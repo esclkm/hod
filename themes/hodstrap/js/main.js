@@ -22,6 +22,8 @@ $(document).ready(function(){
             $('#mainNav').css('position', 'absolute');
         }
     });
+	
+	$('#specs table').addClass('table table-hover').attr('border', 0);
 
 });
 $('.showMap').click(function(){

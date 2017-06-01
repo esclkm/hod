@@ -1,10 +1,10 @@
 <!-- BEGIN: MAIN -->
 
-<div class="page-header">
+<section class="page-content">
 	<div class="container container-fluid">	
 		<h1>{PAGEADD_PAGETITLE}</h1>
 	</div>
-</div>
+</section>
 <div class="container container-fluid">
 
 	{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
@@ -91,10 +91,16 @@
 				<h4>Прикрепленные файлы</h4>
 				{PAGEADD_FORM_MAVATAR}
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-6">
 						<div class="form-group">
 							<label>{PAGEADD_FORM_YOUTUBE_TITLE}</label>
 							{PAGEADD_FORM_YOUTUBE|cot_rc_modify('$this', 'class="form-control"')}
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>{PAGEADD_FORM_3D_TITLE}</label>
+							{PAGEADD_FORM_3D|cot_rc_modify('$this', 'class="form-control"')}
 						</div>
 					</div>
 				</div>
@@ -112,10 +118,6 @@
 				<div class="form-group">
 					<label>{PAGEADD_FORM_TEXT_SHORT_TITLE}</label>
 					<div>{PAGEADD_FORM_TEXT_SHORT}</div>
-				</div>
-				<div class="form-group">
-					<label>{PAGEADD_FORM_3D_TITLE}</label>
-					<div>{PAGEADD_FORM_3D}</div>
 				</div>
 				<div class="form-group">
 					<label>{PAGEADD_FORM_PRICE_TITLE} ({PAGEADD_FORM_PRICE_PLUS})</label>

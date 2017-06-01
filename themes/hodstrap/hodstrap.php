@@ -90,4 +90,8 @@ if (!function_exists('minusone'))
 		$text = preg_replace('/(\+(.+)\+)/i', '<span class="text-warning">$2</span>', $text);
 		return $text;
 	}
+	function minus_one($int)
+	{
+		return $int - 1;
+	}
 }

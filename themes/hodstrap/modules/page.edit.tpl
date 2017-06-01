@@ -1,13 +1,13 @@
 <!-- BEGIN: MAIN -->
 
-<div class="page-header">
+<section class="page-content">
 	<div class="container container-fluid">	
 		<div class="pull-right">
 			<span class="label label-default">{PAGEEDIT_FORM_LOCALSTATUS}</span>
 		</div>
 		<h1>{PAGEEDIT_PAGETITLE}: <small>{PHP.pag.page_title}</small></h1>	
 	</div>
-</div>		
+</section>	
 <div class="container container-fluid">
 
 	{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
@@ -17,7 +17,7 @@
 		<ul class="nav nav-tabs" role="tablist">
 			<li class="active"><a href="#mainform" role="tab" data-toggle="tab">Основные настройки</a></li>
 			<li><a href="#attachform" role="tab" data-toggle="tab">Прикрепленные файлы</a></li>
-			<li><a href="#optionsform" role="tab" data-toggle="tab">Персональные данные</a></li>
+			<li><a href="#optionsform" role="tab" data-toggle="tab">Параметры страницы</a></li>
 		</ul>
 
 		<!-- Tab panes -->
@@ -107,13 +107,19 @@
 			<div class="tab-pane" id="attachform">
 				<h4>Прикрепленные файлы</h4>
 				{PAGEEDIT_FORM_MAVATAR}
-				<div class="row">
-					<div class="col-md-12">
+				<div class="row paddingtop10">
+					<div class="col-md-6">
 						<div class="form-group">
 							<label>{PAGEEDIT_FORM_YOUTUBE_TITLE}</label>
 							{PAGEEDIT_FORM_YOUTUBE|cot_rc_modify('$this', 'class="form-control"')}
 						</div>
 					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>{PAGEEDIT_FORM_3D_TITLE}</label>
+							{PAGEEDIT_FORM_3D|cot_rc_modify('$this', 'class="form-control"')}
+						</div>
+					</div>						
 				</div>
 			</div>
 			<div class="tab-pane" id="optionsform">
@@ -129,10 +135,6 @@
 				<div class="form-group">
 					<label>{PAGEEDIT_FORM_TEXT_SHORT_TITLE}</label>
 					<div>{PAGEEDIT_FORM_TEXT_SHORT}</div>
-				</div>
-				<div class="form-group">
-					<label>{PAGEEDIT_FORM_3D_TITLE}</label>
-					<div>{PAGEEDIT_FORM_3D}</div>
 				</div>
 				<div class="form-group">
 					<label>{PAGEEDIT_FORM_PRICE_TITLE} ({PAGEEDIT_FORM_PRICE_PLUS})</label>
