@@ -1,12 +1,12 @@
 <!-- BEGIN: MAIN -->
-<div class="page-header">
+<section class="page-content">
 	<div class="container container-fluid">	
 		<h1>
 			{LIST_CATTITLE}
 		</h1>
 		
 	</div>	
-</div>
+</section>
 <div class="container container-fluid">
 	
 	<div class="text-justify textbox">{LIST_TEXT}</div>

@@ -1,9 +1,9 @@
 <!-- BEGIN: MAIN -->
-<div class="page-header">
+<section class="page-content">
 	<div class="container container-fluid">		
-		<h1>Забронировать сауну</h1>
+		<h1>Контакты</h1>
 	</div>
-</div>
+</section>
 	
 	
 

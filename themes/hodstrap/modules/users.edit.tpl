@@ -1,11 +1,11 @@
 <!-- BEGIN: MAIN -->
-<div class="page-header">
+<section class="page-content">
 	<div class="container container-fluid">		
 		<h1>
 			{PHP.L.Edit}
 		</h1>						
 	</div>
-</div>
+</section>
 <div class="container container-fluid">
 			{USERS_EDIT_TITLE}
 			{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}

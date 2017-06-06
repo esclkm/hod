@@ -5,9 +5,9 @@ $(window).on('load', function() {
     $('#portfolio .image-col img').height(function(){
         return $('#portfolio .text-col').height()+40;
     })
-    $('#contacts .feedback-col').height(function(){
-        return $('#contacts .contacts-col').height();
-    })
+//    $('#contacts .feedback-col').height(function(){
+//        return $('#contacts .contacts-col').height();
+//    })
 });
 $(document).ready(function(){
     var offset_stuck = 100;

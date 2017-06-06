@@ -1,11 +1,11 @@
 <!-- BEGIN: MAIN -->
-<div class="page-header">
+<section class="page-content">
 	<div class="container container-fluid">		
 		<h1>
 			{PHP.L.Users}	
 		</h1>						
 	</div>
-</div>
+</section>
 <div class="container container-fluid">
 			{USERS_TITLE}
 			<div class="table-responsive">

@@ -1,11 +1,11 @@
 <!-- BEGIN: MAIN -->
-<div class="page-header">
+<section class="page-content">
 	<div class="container container-fluid">		
 		<h1>
 			{USERS_PROFILE_TITLE}	
 		</h1>						
 	</div>
-</div>
+</section>
 <div class="container container-fluid">
 			{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
 			<form action="{USERS_PROFILE_FORM_SEND}" method="post" enctype="multipart/form-data" name="profile">

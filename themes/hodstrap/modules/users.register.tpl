@@ -1,9 +1,9 @@
 <!-- BEGIN: MAIN -->
-<div class="page-header">
+<section class="page-content">
 	<div class="container container-fluid">	
 			<h1>{USERS_REGISTER_TITLE}</h1>	
 	</div>
-</div>		
+</section>		
 <div class="container container-fluid">
 	{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
 	<form name="login" action="{USERS_REGISTER_SEND}" method="post" enctype="multipart/form-data" >

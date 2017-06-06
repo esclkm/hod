@@ -6943,7 +6943,7 @@ header .white-arrow {
   color: #fff;
 }
 #contacts .text-col {
-  min-height: 480px;
+  /*min-height: 480px;*/
 }
 #contacts .text-col p {
   font-family: 'PFDinTextCompPro-Medium', sans-serif;

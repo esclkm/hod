@@ -1,5 +1,5 @@
 <!-- BEGIN: MAIN -->
-<div class="page-header">
+<section class="page-content">
 		<div class="container container-fluid">		
 		<h1>
 			{PAGE_SHORTTITLE}
@@ -13,7 +13,7 @@
 		</h1>		
 					
 		</div>
-</div>
+</section>
 <div class="container container-fluid">
 	<!-- IF {PAGE_MAVATAR} -->
 	<div class="row maansorygal">

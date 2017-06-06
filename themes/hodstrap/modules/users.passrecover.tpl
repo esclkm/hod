@@ -1,11 +1,11 @@
 <!-- BEGIN: MAIN -->
-<div class="page-header">
+<section class="page-content">
 	<div class="container container-fluid">		
 		<h1>
 			{PASSRECOVER_TITLE}	
 		</h1>						
 	</div>
-</div>
+</section>
 <div class="container container-fluid">
 	<!-- IF {PHP.msg} == 'request' --><p>{PHP.L.pasrec_mailsent}</p><!-- ENDIF -->
 	<!-- IF {PHP.msg} == 'auth' --><p>{PHP.L.pasrec_mailsent2}</p><!-- ENDIF -->

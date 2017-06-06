@@ -53,7 +53,7 @@
 						<ul class="nav navbar-nav navbar-center">
 							<li><a class="page-scroll" href="{PHP|cot_url('page', 'c=system&al=kompaniya')}">Компания</a></li>
 							<li><a class="page-scroll" href="{PHP|cot_url('page', 'c=projects')}"><!-- IF {PHP.usr.isadmin} -->Проекты<!-- ELSE -->Реализованные проекты<!-- ENDIF --></a></li>
-							<li><a class="page-scroll" href="{PHP|cot_url('page', 'c=blog')}">Блог</a></li>
+							<li><a class="page-scroll" href="{PHP|cot_url('page', 'c=zapchasti')}">Запчасти</a></li>
 							<li><a class="page-scroll" href="{PHP|cot_url('page', 'c=system&al=arenda')}">Аренда</a></li>
 							<li><a class="page-scroll" href="{PHP|cot_url('page', 'e=contact')}">Контакты</a></li>
 							<!-- IF {PHP.usr.isadmin} -->

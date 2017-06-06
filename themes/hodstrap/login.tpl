@@ -1,9 +1,9 @@
 <!-- BEGIN: MAIN -->
-<div class="page-header">
+<section class="page-content">
 	<div class="container container-fluid">	
 		<h1>{USERS_AUTH_TITLE}</h1>	
 	</div>
-</div>
+</section>
 		<div class="container container-fluid">
 				<!-- BEGIN: USERS_AUTH_MAINTENANCE -->
 						<div class="error clear">

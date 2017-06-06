@@ -1,5 +1,12 @@
 <!-- BEGIN: MAIN -->
-
+<section class="page-content">
+		<div class="container container-fluid">	
+		<h1>
+			Неутвержденные
+		</h1>
+		
+	</div>	
+</section>
 		<div class="col3-2 first">
 			<div class="block">
 				<h2 class="folder">{LIST_CATTITLE}</h2>

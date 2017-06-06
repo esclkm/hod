@@ -1,5 +1,5 @@
 <!-- BEGIN: MAIN -->
-<div class="page-header">
+<section class="page-content">
 	<div class="container container-fluid">		
 		<h1>
 			{USERS_DETAILS_NICKNAME}	
@@ -8,7 +8,7 @@
 			<!-- END: USERS_DETAILS_ADMIN -->
 		</h1>						
 	</div>
-</div>
+</section>
 <div class="container container-fluid">
 	{USERS_DETAILS_TITLE}
 	<div class="table-responsive">
