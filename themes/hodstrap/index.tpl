@@ -44,39 +44,23 @@
     <section id="gallery">
         <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#galleryCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#galleryCarousel" data-slide-to="1"></li>
-                <li data-target="#galleryCarousel" data-slide-to="2"></li>
-                <li data-target="#galleryCarousel" data-slide-to="3"></li>
-                <li data-target="#galleryCarousel" data-slide-to="4"></li>
-                <li data-target="#galleryCarousel" data-slide-to="5"></li>
+				<!-- FOR {KEY}, {VALUE} IN {PHP.cfg.ind_sl3_images|string_split} -->
+                <li data-target="#galleryCarousel" data-slide-to="{KEY}" class="<!--IF {KEY} == 0 -->active<!-- ENDIF -->"></li>
+				<!-- ENDFOR -->
             </ol> 
             <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="themes/hodstrap/images/pic2.jpg" alt="" class="img-responsive">
+				<!-- FOR {KEY}, {VALUE} IN {PHP.cfg.ind_sl3_images|string_split} -->
+                <div class="item <!--IF {KEY} == 0 -->active<!-- ENDIF -->">
+                    <img src="{VALUE}" alt="" class="img-responsive">
                 </div>
-                <div class="item">
-                    <img src="themes/hodstrap/images/pic2.jpg" alt="" class="img-responsive">
-                </div>
-                <div class="item">
-                    <img src="themes/hodstrap/images/pic2.jpg" alt="" class="img-responsive">
-                </div>
-                <div class="item">
-                    <img src="themes/hodstrap/images/pic2.jpg" alt="" class="img-responsive">
-                </div>
-                <div class="item">
-                    <img src="themes/hodstrap/images/pic2.jpg" alt="" class="img-responsive">
-                </div>
-                <div class="item">
-                    <img src="themes/hodstrap/images/pic2.jpg" alt="" class="img-responsive">
-                </div>
+				<!-- ENDFOR -->
             </div>
         </div>
     </section>
     
     <section id="video">
         <div id="videoCarousel" class="carousel slide clearfix" data-ride="carousel" data-interval="false">
-            <p class="h1 text-center">Последние видео</p>
+            <p class="h1 text-center">{PHP.cfg.ind_sl4_title}</p>
             <div class="carousel-inner" role="listbox">
 				<!-- FOR {KEY}, {VALUE} IN {PHP.cfg.ind_sl4_youtube|string_split} -->
                 <div class="item <!--IF {KEY} == 0 -->active<!-- ENDIF -->">
@@ -90,16 +74,16 @@
             <!-- Left and right controls -->
             <a class="left carousel-control" href="#videoCarousel" role="button" data-slide="prev">
                 <span class="small-icon white-arrow" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <span class="sr-only">Предыдущий</span>
             </a>
             <a class="right carousel-control" href="#videoCarousel" role="button" data-slide="next">
                 <span class="small-icon white-arrow" aria-hidden="true"></span></span>
-                <span class="sr-only">Next</span>
+                <span class="sr-only">Следующий</span>
             </a>
             <div class="container text-center">
                 <div class="row read-more">
                     <i class="small-icon youtube-big"></i>
-                    <a href=""><span>Наш канал на Youtube</span> →</a>
+                    <a href="{PHP.cfg.ind_sl4_text}"><span>{PHP.cfg.ind_sl4_link_title}</span> →</a>
                 </div>
             </div>            
         </div>

@@ -83,7 +83,7 @@
 
 		<div class="col-xs-12 col-sm-6 feedback-col text-col right-col">
 
-			<h1>Оставить заявку</h1>
+			<p class="h1">Оставить заявку</p>
 			<form>
 				<div class="group">      
 					<input type="text" required>
