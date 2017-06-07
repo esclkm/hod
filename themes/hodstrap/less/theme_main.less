@@ -364,7 +364,7 @@ header {
 }
 #company, 
 .page-content {
-    
+
     background-image: url(../images/bg.jpg);
     color: #fff;
     p, 
@@ -426,7 +426,7 @@ header {
         top: 43px;
     }
     .links {
-         /*margin-top: 40px;*/
+		/*margin-top: 40px;*/
     }
     .links a {
         .link-underline;
@@ -617,7 +617,7 @@ header {
         top: 122px;
         right: 40px;
         bottom: 0;
-        
+
     }
     .showMap {
         .link-underline;
@@ -677,7 +677,7 @@ header {
     }
     /* active state */
     input:focus ~ label, 
-    input:valid ~ label {
+		input:valid ~ label {
         top: -10px;
         font-size: 14px;
         color: #fff;
@@ -688,7 +688,7 @@ header {
         width:100%; 
     }
     .bar:before, 
-    .bar:after {
+		.bar:after {
         content:'';
         height: 1px; 
         width:0;
@@ -701,7 +701,7 @@ header {
     }
     /* active state */
     input:focus ~ .bar:before, 
-    input:focus ~ .bar:after {
+		input:focus ~ .bar:after {
         width:100%;
     }
     .map {
@@ -766,33 +766,21 @@ header {
         border: 0;
     }
 }
-#portfolio-page .page-content {
-    padding-top: 124px;
-    padding-bottom: 24px;
-    .h1 {
-        margin-bottom: 0;
-    }
-    .row {
-        margin-top: 54px;
-        margin-bottom: 14px;
-    }
-    p {
+.page-content 
+{
+	p {
         margin: 0 auto 24px;
-    }
-}
-.back-link {
-    position: absolute;
-    right: 15px;
-    top: 56px;
-}
-#gallery-page {
-    .page-content {
-        padding-top: 158px;
-        padding-bottom: 115px;
-        .h1 {
-            margin-bottom: 40px;
-        }
-        
+    } 
+	#portfolio-page {
+
+		.row {
+			margin-top: 54px;
+			margin-bottom: 14px;
+		}
+
+	}
+	#gallery-page {
+
         .gallery-row {
             display: flex;
             flex-direction: row;
@@ -812,6 +800,12 @@ header {
             margin-bottom: 0;
         }
     }
+
+}
+.back-link {
+    position: absolute;
+    right: 15px;
+    top: 56px;
 }
 .table-col {
     .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
@@ -850,7 +844,7 @@ header {
             height: @gallery-video-height;
         }
     }
-    
+
 }
-    
+
 

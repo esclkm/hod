@@ -6258,7 +6258,7 @@ button.close {
   overflow: hidden;
   width: 45px;
   height: 45px;
-  border: 3px solid #cc2036;
+  border: 3px solid #fff;
   background: transparent;
   font-size: 40px;
   border-radius: 50%;
@@ -6272,7 +6272,7 @@ button.close {
   position: absolute;
   top: 0px;
   left: 1px;
-  color: #cc2036;
+  color: #fff;
 }
 .uploadedfiles .uploadedfile:nth-child(4n+1) {
   content: ' ';
@@ -7153,49 +7153,35 @@ header .white-arrow {
 .page-content article:last-child {
   border: 0;
 }
-#portfolio-page .page-content {
-  padding-top: 124px;
-  padding-bottom: 24px;
+.page-content p {
+  margin: 0 auto 24px;
 }
-#portfolio-page .page-content .h1 {
-  margin-bottom: 0;
-}
-#portfolio-page .page-content .row {
+.page-content #portfolio-page .row {
   margin-top: 54px;
   margin-bottom: 14px;
 }
-#portfolio-page .page-content p {
-  margin: 0 auto 24px;
+.page-content #gallery-page .gallery-row {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+.page-content #gallery-page .gallery-img {
+  margin: 0 10px;
+}
+.page-content #gallery-page .gallery-img:first-child {
+  margin-left: 0;
+}
+.page-content #gallery-page .gallery-img:last-child {
+  margin-right: 0;
+}
+.page-content #gallery-page figcaption {
+  margin-top: 14px;
+  margin-bottom: 0;
 }
 .back-link {
   position: absolute;
   right: 15px;
   top: 56px;
-}
-#gallery-page .page-content {
-  padding-top: 158px;
-  padding-bottom: 115px;
-}
-#gallery-page .page-content .h1 {
-  margin-bottom: 40px;
-}
-#gallery-page .page-content .gallery-row {
-  display: flex;
-  flex-direction: row;
-  align-content: space-between;
-}
-#gallery-page .page-content .gallery-img {
-  margin: 0 10px;
-}
-#gallery-page .page-content .gallery-img:first-child {
-  margin-left: 0;
-}
-#gallery-page .page-content .gallery-img:last-child {
-  margin-right: 0;
-}
-#gallery-page .page-content figcaption {
-  margin-top: 14px;
-  margin-bottom: 0;
 }
 .table-col .table > tbody > tr > td,
 .table-col .table > tbody > tr > th,
@@ -7439,13 +7425,13 @@ header .white-arrow {
   .back-link {
     top: 0px;
   }
-  #gallery-page .page-content .gallery-row {
+  #gallery-page .gallery-row {
     flex-direction: column;
   }
-  #gallery-page .page-content .gallery-img {
+  #gallery-page .gallery-img {
     margin: 0;
   }
-  #gallery-page .page-content figcaption {
+  #gallery-page figcaption {
     margin-bottom: 20px;
   }
   .table-col .table {
