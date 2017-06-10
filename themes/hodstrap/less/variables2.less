@@ -1,3 +1,29 @@
+@font-face{
+    font-family: 'PFDinTextCompPro-XThin';
+    src: url('../fonts/PFDinTextCompPro-XThin.ttf');
+    font-weight: 200;
+}
+@font-face{
+    font-family: 'PFDinTextCompPro-Light';
+    src: url('../fonts/PFDinTextCompPro-Light.ttf');
+    font-weight: 300;
+}
+@font-face{
+    font-family: 'PFDinTextCompPro-Regular';
+    src: url('../fonts/PFDinTextCompPro-Regular.ttf');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'PFDinTextCompPro-Medium';
+    src: url('../fonts/PFDinTextCompPro-Medium.ttf');
+    font-weight: 500;
+}
+@thin-font: 'PFDinTextCompPro-XThin';
+@light-font: 'PFDinTextCompPro-Light';
+@regular-font: 'PFDinTextCompPro-Regular';
+@medium-font: 'PFDinTextCompPro-Medium';
+@number-width: 98px;
+
 // United 3.3.6
 // Variables
 // --------------------------------------------------
@@ -42,7 +68,7 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:   @medium-font, sans-serif, Tahoma, "Helvetica Neue", Helvetica, Arial;
 @font-family-serif:       'PT Serif', Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -144,8 +170,8 @@
 
 @btn-font-weight:                normal;
 
-@btn-default-color:              #fff;
-@btn-default-bg:                 @gray-light;
+@btn-default-color:              #000;
+@btn-default-bg:                 #f1f1f1;
 @btn-default-border:             @btn-default-bg;
 
 @btn-primary-color:              @btn-default-color;

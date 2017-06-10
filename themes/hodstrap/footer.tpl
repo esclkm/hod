@@ -91,31 +91,7 @@
 		</div>
 
 		<div class="col-xs-12 col-sm-6 feedback-col text-col right-col">
-
-			<p class="h1">Оставить заявку</p>
-			<form>
-				<div class="group">      
-					<input type="text" required>
-					<span class="bar"></span>
-					<label>Имя</label>
-				</div>
-				<div class="group">      
-					<input type="text" required>
-					<span class="bar"></span>
-					<label>Телефон</label>
-				</div>
-				<div class="group">      
-					<input type="email" required>
-					<span class="bar"></span>
-					<label>Электронная почта</label>
-				</div>
-				<div class="group">      
-					<textarea type="text" required></textarea>
-					<span class="bar"></span>
-					<label>Сообщение</label>
-				</div>
-			</form>
-			<button class="btn white-btn">Отправить заявку</button>
+			{PHP|contact_bottom}
 		</div>
 	</div>
 	<div class="col-xs-12 col-sm-6 map" id="spbMap">
@@ -132,7 +108,7 @@
 </div>							
 
 
-{PHP|contact_bottom('ajax')}
+	{PHP|contact_bottom('ajax')}
 	{FOOTER_RC}
 
 </body>

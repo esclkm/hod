@@ -2,6 +2,26 @@
  * google-material-color v1.2.2
  * https://github.com/danlevan/google-material-color
  */
+@font-face {
+  font-family: 'PFDinTextCompPro-XThin';
+  src: url('../fonts/PFDinTextCompPro-XThin.ttf');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'PFDinTextCompPro-Light';
+  src: url('../fonts/PFDinTextCompPro-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'PFDinTextCompPro-Regular';
+  src: url('../fonts/PFDinTextCompPro-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'PFDinTextCompPro-Medium';
+  src: url('../fonts/PFDinTextCompPro-Medium.ttf');
+  font-weight: 500;
+}
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -885,7 +905,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'PFDinTextCompPro-Medium', sans-serif, Tahoma, "Helvetica Neue", Helvetica, Arial;
   font-size: 16px;
   line-height: 1.42857143;
   color: #000000;
@@ -2760,7 +2780,7 @@ select[multiple].input-lg {
 }
 .btn:hover,
 .btn:focus {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
 }
 .btn:active,
@@ -2787,18 +2807,18 @@ fieldset[disabled] .btn {
   box-shadow: none rgba(0, 0, 0, 0.5);
 }
 .btn-default {
-  color: #ffffff;
-  background-color: #262626;
-  border-color: #262626;
+  color: #000000;
+  background-color: #f1f1f1;
+  border-color: #f1f1f1;
 }
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #ffffff;
-  background-color: #0c0c0c;
-  border-color: #070707;
+  color: #000000;
+  background-color: #d8d8d8;
+  border-color: #d2d2d2;
 }
 .btn-default:active,
 .btn-default.active,
@@ -2820,15 +2840,15 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
-  background-color: #262626;
-  border-color: #262626;
+  background-color: #f1f1f1;
+  border-color: #f1f1f1;
 }
 .btn-default .badge {
-  color: #262626;
-  background-color: #ffffff;
+  color: #f1f1f1;
+  background-color: #000000;
 }
 .btn-primary {
-  color: #ffffff;
+  color: #000000;
   background-color: #cc2036;
   border-color: #cc2036;
 }
@@ -2837,7 +2857,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: #ffffff;
+  color: #000000;
   background-color: #a0192a;
   border-color: #971828;
 }
@@ -2866,10 +2886,10 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-primary .badge {
   color: #cc2036;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 .btn-success {
-  color: #ffffff;
+  color: #000000;
   background-color: #38b44a;
   border-color: #38b44a;
 }
@@ -2878,7 +2898,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-success:active,
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
-  color: #ffffff;
+  color: #000000;
   background-color: #2c8d3a;
   border-color: #298537;
 }
@@ -2907,10 +2927,10 @@ fieldset[disabled] .btn-success.active {
 }
 .btn-success .badge {
   color: #38b44a;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 .btn-info {
-  color: #ffffff;
+  color: #000000;
   background-color: #d4a97a;
   border-color: #d4a97a;
 }
@@ -2919,7 +2939,7 @@ fieldset[disabled] .btn-success.active {
 .btn-info:active,
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
-  color: #ffffff;
+  color: #000000;
   background-color: #c89053;
   border-color: #c58b4c;
 }
@@ -2948,10 +2968,10 @@ fieldset[disabled] .btn-info.active {
 }
 .btn-info .badge {
   color: #d4a97a;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 .btn-warning {
-  color: #ffffff;
+  color: #000000;
   background-color: #efb73e;
   border-color: #efb73e;
 }
@@ -2960,7 +2980,7 @@ fieldset[disabled] .btn-info.active {
 .btn-warning:active,
 .btn-warning.active,
 .open > .dropdown-toggle.btn-warning {
-  color: #ffffff;
+  color: #000000;
   background-color: #e7a413;
   border-color: #dd9d12;
 }
@@ -2989,10 +3009,10 @@ fieldset[disabled] .btn-warning.active {
 }
 .btn-warning .badge {
   color: #efb73e;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 .btn-danger {
-  color: #ffffff;
+  color: #000000;
   background-color: #df382c;
   border-color: #df382c;
 }
@@ -3001,7 +3021,7 @@ fieldset[disabled] .btn-warning.active {
 .btn-danger:active,
 .btn-danger.active,
 .open > .dropdown-toggle.btn-danger {
-  color: #ffffff;
+  color: #000000;
   background-color: #bc271c;
   border-color: #b3251b;
 }
@@ -3030,7 +3050,7 @@ fieldset[disabled] .btn-danger.active {
 }
 .btn-danger .badge {
   color: #df382c;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 .btn-link {
   color: #cc2036;
@@ -4495,11 +4515,11 @@ a.label:focus {
   top: -1px;
 }
 .label-default {
-  background-color: #262626;
+  background-color: #f1f1f1;
 }
 .label-default[href]:hover,
 .label-default[href]:focus {
-  background-color: #0c0c0c;
+  background-color: #d8d8d8;
 }
 .label-primary {
   background-color: #cc2036;
@@ -6312,26 +6332,6 @@ button.close {
 }
 .modal-open[style] {
   padding-right: 0px !important;
-}
-@font-face {
-  font-family: 'PFDinTextCompPro-XThin';
-  src: url('../fonts/PFDinTextCompPro-XThin.ttf');
-  font-weight: 200;
-}
-@font-face {
-  font-family: 'PFDinTextCompPro-Light';
-  src: url('../fonts/PFDinTextCompPro-Light.ttf');
-  font-weight: 300;
-}
-@font-face {
-  font-family: 'PFDinTextCompPro-Regular';
-  src: url('../fonts/PFDinTextCompPro-Regular.ttf');
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'PFDinTextCompPro-Medium';
-  src: url('../fonts/PFDinTextCompPro-Medium.ttf');
-  font-weight: 500;
 }
 body {
   font-family: 'OpenSans', sans-serif;
