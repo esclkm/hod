@@ -47,37 +47,46 @@
 				</ul>
 				<div class="tab-content">
 					<div id="spb" class="tab-pane fade in active">
-						<p>+7 (812) 915-44-22</p>
-						<p>Санкт-Петербург, Ольгино, ул. Граничная, д. 14.</p>
-						<p>snegobolotohod@list.ru</p>
-						<a href="#" class="showMap"><span>Посмотреть на карте</span> →</a>
+						<p>{PHP.cfg.footer_spb_phone}</p>
+						<p>{PHP.cfg.footer_spb_addr}</p>
+						<p>{PHP.cfg.footer_msk_email}</p>
+						<a href="{PHP.cfg.footer_msk_map_link}" class="showMap"><span>Посмотреть на карте</span> →</a>
 					</div>
 					<div id="msk" class="tab-pane fade">
-						<p>+7 (812) 915-44-22</p>
-						<p>Санкт-Петербург, Ольгино, ул. Граничная, д. 14.</p>
-						<p>snegobolotohod@list.ru</p>
-						<a href="" class="showMap"><span>Посмотреть на карте</span> →</a>
+						<p>{PHP.cfg.footer_msk_phone}</p>
+						<p>{PHP.cfg.footer_msk_addr}</p>
+						<p>{PHP.cfg.footer_spb_email}</p>
+						<a href="{PHP.cfg.footer_spb_map_link}" class="showMap"><span>Посмотреть на карте</span> →</a>
 					</div>
 				</div>
 			</div>     
-			<span class="rights">© Все права защищены</span> 
+			<span class="rights">{PHP.cfg.footercopy}</span> 
 			<div class="col-xs-12 links clearfix">
-				<a href="">
+				<!-- IF {PHP.cfg.footer_social_vk} -->
+				<a href="{PHP.cfg.footer_social_vk}">
 					<i class="small-icon vk"></i>
 					<span>Вконтакте</span> →
 				</a>
-				<a href="">
+				<!-- ENDIF -->
+				<!-- IF {PHP.cfg.footer_social_instagram} -->
+				<a href="{PHP.cfg.footer_social_instagram}">
 					<i class="small-icon instagram"></i>
 					<span>Инстаграм</span> →
 				</a>
-				<a href="">
+				<!-- ENDIF -->
+				<!-- IF {PHP.cfg.footer_social_drive2} -->
+				<a href="{PHP.cfg.footer_social_drive2}">
 					<i class="small-icon drive2"></i>
 					<span>Drive2</span> →
 				</a>
-				<a href="">
+				<!-- ENDIF -->
+				<!-- IF {PHP.cfg.footer_social_youtube} -->
+				<a href="{PHP.cfg.footer_social_youtube}">
 					<i class="small-icon youtube-small"></i>
 					<span>Youtube</span> →
 				</a>
+				<!-- ENDIF -->
+				
 			</div>
 		</div>
 
@@ -101,7 +110,7 @@
 					<label>Электронная почта</label>
 				</div>
 				<div class="group">      
-					<input type="text" required>
+					<textarea type="text" required></textarea>
 					<span class="bar"></span>
 					<label>Сообщение</label>
 				</div>

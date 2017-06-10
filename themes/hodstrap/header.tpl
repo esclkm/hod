@@ -55,7 +55,7 @@
 							<li><a class="page-scroll" href="{PHP|cot_url('page', 'c=projects')}"><!-- IF {PHP.usr.isadmin} -->Проекты<!-- ELSE -->Реализованные проекты<!-- ENDIF --></a></li>
 							<li><a class="page-scroll" href="{PHP|cot_url('page', 'c=zapchasti')}">Запчасти</a></li>
 							<li><a class="page-scroll" href="{PHP|cot_url('page', 'c=system&al=arenda')}">Аренда</a></li>
-							<li><a class="page-scroll" href="{PHP|cot_url('page', 'e=contact')}">Контакты</a></li>
+							<li><a class="page-scroll" href="{PHP|cot_url('page', 'c=system&al=kontakty')}">Контакты</a></li>
 							<!-- IF {PHP.usr.isadmin} -->
 							<li><a href="{PHP|cot_url('admin')}" class="external" title="Админ-панель"><span class="glyphicon glyphicon-cog"></span> </a></li>
 							<li><a href="{PHP|cot_url('page', 'm=add')}" class="external" title="Добавить страницу"><span class="glyphicon glyphicon-plus-sign"></span></a></li>
