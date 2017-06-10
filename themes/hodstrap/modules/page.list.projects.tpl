@@ -25,7 +25,7 @@
 						<!-- IF {LIST_ROWCAT_DESC} -->
 						<p class="small">{LIST_ROWCAT_DESC}</p>
 						<!-- ENDIF -->
-						{LIST_ROWCAT_TEXT}
+						{LIST_ROWCAT_DESCTEXT}
 
 						<div class="links">
 							<a href="{LIST_ROWCAT_URL}"><span>Посмотреть проекты</span> →</a>
@@ -33,8 +33,9 @@
 					</div>
 					<div class="col-xs-12 col-sm-4 image-col">
 						<figure class="img">
-							<img alt="" src="themes/hodstrap/sources/assets/images/kv.jpg" class="img-responsive">
-							<figcaption class="text-center">Погрузка снегоболотохода на поезд</figcaption>
+							
+							<img alt="" src="datas/exflds/{LIST_ROWCAT_AVATAR}" class="img-responsive">
+							<figcaption class="text-center">{LIST_ROWCAT_UNDAVATAR}</figcaption>
 						</figure>
 					</div>            
 				</div>
@@ -45,26 +46,6 @@
 
 			<!-- ENDIF -->	
 
-			<article>
-				<div class="row">
-					<div class="col-xs-12">
-						<p class="h2">КОЛЕСНАЯ</p>
-					</div>
-					<div class="col-xs-12 col-sm-8 text-col">
-						<p>ГКолесная техника (колесные вездеходы) обладает высокой грузоподъемностью, выносливостью, маневренностью и проходимостью, может эксплуатироваться в самых экстремальных условиях и на бездорожье: колесный вездеход с легкостью преодолевает крутые спуски и подъемы, небольшие водоемы и другие препятствия.</p>
-						<p>Основное предназначение колесных вездеходов – перевозка людей, грузов и технологического оборудования в условиях бездорожья, заснеженной местности. Вездеходы замечательно приспособлены к сложным природным условиям, слякоти и снежной погоде.</p>
-						<div class="links">
-							<a href=""><span>Посмотреть проекты</span> →</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-4 image-col">
-						<figure class="img">
-							<img alt="" src="themes/hodstrap/sources/assets/images/kv.jpg" class="img-responsive">
-							<figcaption class="text-center">Погрузка снегоболотохода на поезд</figcaption>
-						</figure>
-					</div>            
-				</div>
-			</article>
 		</div>
 
 		<div id="gallery-page">
