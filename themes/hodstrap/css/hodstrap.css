@@ -6691,29 +6691,39 @@ header .white-arrow {
     font-size: 18px;
   }
 }
-#company a,
-.page-content a {
+#company a:not([class]),
+.page-content a:not([class]),
+#company .back-link,
+.page-content .back-link {
   color: #fff;
   font-family: 'PFDinTextCompPro-Regular', sans-serif;
   font-size: 18px;
   text-decoration: underline;
 }
 @media (max-width: 767px) {
-  #company a,
-  .page-content a {
+  #company a:not([class]),
+  .page-content a:not([class]),
+  #company .back-link,
+  .page-content .back-link {
     font-size: 24px;
   }
 }
-#company a span,
-.page-content a span {
+#company a:not([class]) span,
+.page-content a:not([class]) span,
+#company .back-link span,
+.page-content .back-link span {
   text-decoration: underline;
 }
-#company a:hover,
-.page-content a:hover {
+#company a:not([class]):hover,
+.page-content a:not([class]):hover,
+#company .back-link:hover,
+.page-content .back-link:hover {
   text-decoration: none;
 }
-#company a:hover,
-.page-content a:hover {
+#company a:not([class]):hover,
+.page-content a:not([class]):hover,
+#company .back-link:hover,
+.page-content .back-link:hover {
   text-decoration: underline;
 }
 #company {
@@ -7119,9 +7129,6 @@ header .white-arrow {
   margin-top: 20px;
   padding: 0 15px;
 }
-.page-content .row > div {
-  padding: 0;
-}
 .page-content .row > div.text-col {
   padding-right: 80px;
 }
@@ -7160,23 +7167,16 @@ header .white-arrow {
   margin-top: 54px;
   margin-bottom: 14px;
 }
-.page-content #gallery-page .gallery-row {
-  display: flex;
-  flex-direction: row;
-  align-content: space-between;
+.page-content .list-project {
+  margin: 10px 0 10px 0;
+  font-family: 'PFDinTextCompPro-Light', sans-serif;
+  font-style: italic;
 }
-.page-content #gallery-page .gallery-img {
-  margin: 0 10px;
+.page-content .list-project .text-center {
+  padding-top: 14px;
 }
-.page-content #gallery-page .gallery-img:first-child {
-  margin-left: 0;
-}
-.page-content #gallery-page .gallery-img:last-child {
-  margin-right: 0;
-}
-.page-content #gallery-page figcaption {
-  margin-top: 14px;
-  margin-bottom: 0;
+.page-content .list-project .text-center a {
+  text-decoration: none;
 }
 .back-link {
   position: absolute;
@@ -7218,6 +7218,9 @@ header .white-arrow {
   width: 100%;
   object-fit: cover;
   height: 510px;
+}
+.page-content + #contacts {
+  margin-top: -25px;
 }
 @media (min-width: 1280px) {
   .text-col .container {
@@ -7424,15 +7427,6 @@ header .white-arrow {
   }
   .back-link {
     top: 0px;
-  }
-  #gallery-page .gallery-row {
-    flex-direction: column;
-  }
-  #gallery-page .gallery-img {
-    margin: 0;
-  }
-  #gallery-page figcaption {
-    margin-bottom: 20px;
   }
   .table-col .table {
     margin-bottom: 0;

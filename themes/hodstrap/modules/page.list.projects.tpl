@@ -13,13 +13,13 @@
 			<!-- ENDIF -->
 			<!-- IF {LIST_ROWCAT_URL} -->
 
-
+			<div class="text-justify textbox">{LIST_TEXT}</div>
 			<!-- BEGIN: LIST_ROWCAT -->
-			
+
 			<article>
 				<div class="row">
 					<div class="col-xs-12">
-						<p class="h2">{LIST_ROWCAT_TITLE} ({LIST_ROWCAT_COUNT})</p>
+						<p class="h2">{LIST_ROWCAT_TITLE} <!-- IF {PHP.usr.isadmin} -->({LIST_ROWCAT_COUNT})<!-- ENDIF --></p>
 					</div>
 					<div class="col-xs-12 col-sm-8 text-col">
 						<!-- IF {LIST_ROWCAT_DESC} -->
@@ -33,14 +33,14 @@
 					</div>
 					<div class="col-xs-12 col-sm-4 image-col">
 						<figure class="img">
-							
+
 							<img alt="" src="datas/exflds/{LIST_ROWCAT_AVATAR}" class="img-responsive">
 							<figcaption class="text-center">{LIST_ROWCAT_UNDAVATAR}</figcaption>
 						</figure>
 					</div>            
 				</div>
 			</article>
-	
+
 			<!-- END: LIST_ROWCAT -->
 
 
@@ -48,121 +48,48 @@
 
 		</div>
 
-		<div id="gallery-page">
-			<div class="row">
-                <p class="h1">гусеничные</p>
-            </div>
-            <a href="" class="back-link">← <span>Назад к категориям</span></a>
-            <div class="row gallery-row">
-                <div class="gallery-img">
-                    <figure class="img">
-                        <img alt="" src="themes/hodstrap/sources/assets/images/kv.jpg" class="img-responsive">
-                        <figcaption class="text-center">Погрузка снегоболотохода на поезд</figcaption>
-                    </figure>
-                </div>
-                <div class="gallery-img">
-                    <figure class="img">
-                        <img alt="" src="themes/hodstrap/sources/assets/images/kv.jpg" class="img-responsive">
-                        <figcaption class="text-center">Погрузка снегоболотохода на поезд</figcaption>
-                    </figure>
-                </div>
-                <div class="gallery-img">
-                    <figure class="img">
-                        <img alt="" src="themes/hodstrap/sources/assets/images/kv.jpg" class="img-responsive">
-                        <figcaption class="text-center">Погрузка снегоболотохода на поезд</figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="row gallery-row">
-                <div class="gallery-img">
-                    <figure class="img">
-                        <img alt="" src="themes/hodstrap/sources/assets/images/kv.jpg" class="img-responsive">
-                        <figcaption class="text-center">Погрузка снегоболотохода на поезд</figcaption>
-                    </figure>
-                </div>
-                <div class="gallery-img">
-                    <figure class="img">
-                        <img alt="" src="themes/hodstrap/sources/assets/images/kv.jpg" class="img-responsive">
-                        <figcaption class="text-center">Погрузка снегоболотохода на поезд</figcaption>
-                    </figure>
-                </div>
-                <div class="gallery-img">
-                    <figure class="img">
-                        <img alt="" src="themes/hodstrap/sources/assets/images/kv.jpg" class="img-responsive">
-                        <figcaption class="text-center">Погрузка снегоболотохода на поезд</figcaption>
-                    </figure>
-                </div>
-            </div>
-		</div>
-	</div>
-</section>
+		<!-- IF {LIST_ROW_DESC} -->
+		<div class="row">
+			<!-- BEGIN: LIST_ROW -->
+			<div class="col-md-4 col-sm-6 col-xs-12 list-project">
+				<!-- IF {LIST_ROW_MAVATARCOUNT} -->
+					<a href="{LIST_ROW_URL}"><img src="{LIST_ROW_MAVATAR.1|cot_mav_thumb($this, 366, 234, auto)}" alt="{LIST_ROW_MAVATAR.1.DESC}" class="img-responsive" title="{LIST_ROW_MAVATAR.1.DESC}"/></a>
+				<!-- ELSE -->
+					<a href="{LIST_ROW_URL}"><img src="{PHP.cfg.mainurl}/themes/{PHP.usr.theme}/images/no-image.png" class="img-responsive"/></a>
+				<!-- ENDIF -->
+				
+				<div class="text-center">
+					<a href="{LIST_ROW_URL}">{LIST_ROW_SHORTTITLE}</a>
+					<!-- IF {PHP.usr.isadmin} -->
+					<a class="small pull-right" href="{LIST_ROW_ADMIN_EDIT_URL}" title="{PHP.L.Edit}">
+						<span class="glyphicon glyphicon-edit"></span> 
+					</a>
 
-
-
-<!-- IF {PHP.c} == 'projects' -->
-<!-- ELSE -->
-<!-- ENDIF -->
-<section class="page-content">
-	<div class="container container-fluid">	
-		<h1>
-			{LIST_CATTITLE}
-		</h1>
-
-	</div>	
-</section>
-<div class="container container-fluid">
-
-	<div class="text-justify textbox">{LIST_TEXT}</div>
-
-	<div class="row">
-	
-		<div class="col-md-12">
-			<div class="row">
-				<!-- BEGIN: LIST_ROW -->
-
-				<div class="col-xs-12 col-sm-12">
-					<h4>
-						<a href="{LIST_ROW_URL}">{LIST_ROW_SHORTTITLE}</a>
-
-						<!-- IF {PHP.usr.isadmin} -->
-						<a class="small pull-right" href="{LIST_ROW_ADMIN_EDIT_URL}" title="{PHP.L.Edit}">
-							<span class="glyphicon glyphicon-edit"></span> 
-						</a>
-
-						<!-- ENDIF -->
-
-					</h4>
-					<div class="">					
-						{PHP.L.Category}: {LIST_ROW_CATPATH_SHORT} 
-							<div class="pull-right">
-								<span class="fa fa-clock-o" title="{PHP.L.Date}"></span>&nbsp; {LIST_ROW_DATE_STAMP|cot_date('date_text', $this)} 
-								<!-- IF {LIST_ROW_MAVATARCOUNT} -->
-								&nbsp;<span class="fa fa-picture-o"  title="Скриншоты"></span> {LIST_ROW_MAVATARCOUNT}
-								<!-- ENDIF -->	
-
-								<!-- IF {LIST_ROW_MAVATARFILES} -->
-								&nbsp;<span class="fa fa-download" title="Файлы длязагрузки"></span> {LIST_ROW_MAVATARFILESCOUNT}
-								<!-- ENDIF -->
-								<!-- IF {LIST_ROW_COMMENTS_COUNT} -->
-								&nbsp;<span class="fa fa-comments-o" title="Комментарии"></span> {LIST_ROW_COMMENTS_COUNT}
-								<!-- ENDIF -->
-							</div>
-						</div>
-
-
-						<div class="textbox text-justify">
-							{LIST_ROW_DESC}
-						</div>
-						<div class="textbox text-justify">
-							{LIST_ROW_TEXT}
-						</div>
-						<hr/>
-					</div>
-
-					<!-- END: LIST_ROW -->
+					<!-- ENDIF -->
 				</div>
 			</div>
+			<!-- END: LIST_ROW -->
+
+			<!-- IF {LIST_ROW_NUM} % 2 == 0 -->
+			<div class="clearfix hidden-md hidden-lg"></div>
+			<!-- ENDIF -->	
+			<!-- IF {LIST_ROW_NUM} % 3 == 0 -->
+			<div class="clearfix hidden-xs hidden-sm"></div>
+			<!-- ENDIF -->	
+
 		</div>
+		<div class="clearfix"></div>
+		<!-- ENDIF -->
+
+	</div>
+
+
+
+
+	<div class="container container-fluid">
+
+
+
 		<!-- IF {LIST_TOP_PAGINATION} -->
 		<div class="text-center">
 			<ul class="pagination">{LIST_TOP_PAGEPREV}{LIST_TOP_PAGINATION}{LIST_TOP_PAGENEXT}</ul>
@@ -193,5 +120,5 @@
 		<!-- ENDIF -->	
 
 	</div>
-
-	<!-- END: MAIN -->
+</section>
+<!-- END: MAIN -->

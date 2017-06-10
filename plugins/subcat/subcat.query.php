@@ -20,16 +20,17 @@ $subcat = cot_import('sc','G','BOL') ? 1 : 0;
 $nosubcat = cot_import('nsc','G','BOL') ? 1 : 0;
 $subcat && $list_url_path['sc'] = $subcat;
 $nosubcat && $list_url_path['nsc'] = $nosubcat;
-
-$scats = explode(',', $cfg['plugin']['subcat']['cats']);
-array_walk($scats, 'trim');
-
 $scatarray = array();
-foreach ($scats as $scat)
-{
-	$scatarray = array_merge(cot_structure_children('page', $scat), $scatarray);
-}
+if(trim($cfg['plugin']['subcat']['cats'])){
+	$scats = explode(',', $cfg['plugin']['subcat']['cats']);
+	array_walk($scats, 'trim');
 
+
+	foreach ($scats as $scat)
+	{
+		$scatarray = array_merge(cot_structure_children('page', $scat), $scatarray);
+	}
+}
 if (!$nosubcat && ($subcat || in_array($c, $scatarray)) && $c != 'all' && $c != 'unvalidated')
 {
 	
