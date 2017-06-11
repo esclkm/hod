@@ -1,5 +1,6 @@
 <!-- BEGIN: MAIN -->
-
+<section class="page-content">
+	<br/><br/><br/><br/>
 		<div class="col first">
 			<div class="block">
 				<h2 class="warning">{MESSAGE_TITLE}</h2>
@@ -16,5 +17,5 @@
 				</div>
 			</div>
 		</div>
-
+</section>
 <!-- END: MAIN -->

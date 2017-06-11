@@ -48,7 +48,7 @@
 
 		</div>
 
-		<!-- IF {LIST_ROW_DESC} -->
+		<!-- IF {LIST_ROW_URL} -->
 		<div class="row">
 			<!-- BEGIN: LIST_ROW -->
 			<div class="col-md-4 col-sm-6 col-xs-12 list-project">
