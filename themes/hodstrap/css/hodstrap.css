@@ -6450,9 +6450,9 @@ a .link-arrow {
 }
 #mainNav.navbar-not-home .navbar-center {
   float: right;
-  max-width: 534px;
+  max-width: 564px;
   width: auto;
-  margin-right: 170px;
+  margin-right: 140px;
 }
 #mainNav.navbar-not-home .navbar-center > li > a {
   padding: 52px 17px 26px;

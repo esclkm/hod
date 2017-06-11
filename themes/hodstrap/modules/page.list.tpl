@@ -83,18 +83,9 @@
 	<div class="text-justify textbox">{LIST_TEXT_AFTER}</div>
 	<!-- IF {PHP.usr.isadmin} -->
 		<div class="paddingtop10 paddingbottom10">
-		<!-- Split button -->
-			<div class="btn-group">
-			  <a href="{PHP|cot_url('admin')}" class="btn btn-default"><span class="glyphicon glyphicon-cog"></span> Админ-панель</a>
-			  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-			    <span class="caret"></span>
-			    <span class="sr-only">Toggle Dropdown</span>&thinsp;
-			  </button>
-			  <ul class="dropdown-menu" role="menu">
-			    <li><a href="{PHP|cot_url('admin', 'm=structure&n=page')}"><span class="glyphicon glyphicon-folder-open"></span>  Структура</a></li>
-			    <li><a href="{PHP|cot_url('admin', 'm=other&p=menugenerator')}"><span class="glyphicon glyphicon-list-alt"></span> Редактор меню</a> </li>
-			  </ul>
-			</div>
+		
+			<a href="{PHP|cot_url('admin')}" class="btn btn-default"><span class="glyphicon glyphicon-cog"></span> Админ-панель</a>
+
 
 			<a href="{PHP|cot_url('users','m=profile')}" class="btn btn-default"><span class="glyphicon glyphicon-user"></span> {PHP.L.Profile}</a>
 			<a href="{PHP.c|cot_url('page', 'm=add&c=$this')}" class="btn btn-default"><span class="glyphicon glyphicon-plus-sign"></span> Добавить страницу</a> 
