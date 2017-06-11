@@ -34,7 +34,7 @@
 					<div class="col-xs-12 col-sm-4 image-col">
 						<figure class="img">
 
-							<img alt="" src="datas/exflds/{LIST_ROWCAT_AVATAR}" class="img-responsive">
+							<img alt="" src="{PHP.cfg.testurl}datas/exflds/{LIST_ROWCAT_AVATAR}" class="img-responsive">
 							<figcaption class="text-center">{LIST_ROWCAT_UNDAVATAR}</figcaption>
 						</figure>
 					</div>            
@@ -53,7 +53,7 @@
 			<!-- BEGIN: LIST_ROW -->
 			<div class="col-md-4 col-sm-6 col-xs-12 list-project">
 				<!-- IF {LIST_ROW_MAVATARCOUNT} -->
-					<a href="{LIST_ROW_URL}"><img src="{LIST_ROW_MAVATAR.1|cot_mav_thumb($this, 366, 234, auto)}" alt="{LIST_ROW_MAVATAR.1.DESC}" class="img-responsive" title="{LIST_ROW_MAVATAR.1.DESC}"/></a>
+					<a href="{LIST_ROW_URL}"><img src="{PHP.cfg.testurl}{LIST_ROW_MAVATAR.1|cot_mav_thumb($this, 360, 270, crop)}" alt="{LIST_ROW_MAVATAR.1.DESC}" class="img-responsive" title="{LIST_ROW_MAVATAR.1.DESC}"/></a>
 				<!-- ELSE -->
 					<a href="{LIST_ROW_URL}"><img src="{PHP.cfg.mainurl}/themes/{PHP.usr.theme}/images/no-image.png" class="img-responsive"/></a>
 				<!-- ENDIF -->
@@ -68,14 +68,15 @@
 					<!-- ENDIF -->
 				</div>
 			</div>
-			<!-- END: LIST_ROW -->
-
 			<!-- IF {LIST_ROW_NUM} % 2 == 0 -->
 			<div class="clearfix hidden-md hidden-lg"></div>
 			<!-- ENDIF -->	
 			<!-- IF {LIST_ROW_NUM} % 3 == 0 -->
 			<div class="clearfix hidden-xs hidden-sm"></div>
-			<!-- ENDIF -->	
+			<!-- ENDIF -->							
+			<!-- END: LIST_ROW -->
+
+
 
 		</div>
 		<div class="clearfix"></div>

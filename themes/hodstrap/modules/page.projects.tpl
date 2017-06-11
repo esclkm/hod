@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-4 image-col">
                     <figure class="img">
-                        <img alt="" src="<!-- IF {PAGE_MAVATAR} -->{PAGE_MAVATAR.1|cot_mav_thumb($this, 380, 243, crop)}<!-- ELSE -->{PHP.cfg.mainurl}/themes/{PHP.usr.theme}/images/no-image.png<!-- ENDIF -->" class="img-responsive">
+                        <img alt="" src="<!-- IF {PAGE_MAVATAR} -->{PHP.cfg.testurl}{PAGE_MAVATAR.1|cot_mav_thumb($this, 380, 243, crop)}<!-- ELSE -->{PHP.cfg.mainurl}/themes/{PHP.usr.theme}/images/no-image.png<!-- ENDIF -->" class="img-responsive">
                         <figcaption class="text-center">{PAGE_MAVATAR.1.DESC}</figcaption>
                     </figure>
                 </div>            
@@ -68,7 +68,7 @@
             <div class="carousel-inner" role="listbox">
 				<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
                 <div class="item <!--IF {KEY|minus_one} == 0 -->active<!-- ENDIF -->">
-                    <img src="{VALUE|cot_mav_thumb($this, 1280, 455, crop)}" alt="" class="img-responsive">
+                    <img src="{PHP.cfg.testurl}{VALUE|cot_mav_thumb($this, 1280, 455, crop)}" alt="" class="img-responsive">
                 </div>
 				<!-- ENDFOR -->
             </div>
