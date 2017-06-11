@@ -51,7 +51,11 @@
         <div class="col-xs-12 <!-- IF {PAGE_3D|mb_strlen} >10 -->col-sm-6<!-- ENDIF --> right-col">
 			
 			<div class="iframe-container1 embed-responsive embed-responsive-4by3">
+				<!-- IF {PAGE_YOUTUBE|youtube_id_from_url} -->
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{PAGE_YOUTUBE|youtube_id_from_url}" frameborder="0" allowfullscreen></iframe>
+				<!-- ELSE -->
+				<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/{PAGE_YOUTUBE|vimeo_id_from_url}?title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe>
+				<!-- ENDIF -->
             </div>
         </div>
 		<!-- ENDIF -->

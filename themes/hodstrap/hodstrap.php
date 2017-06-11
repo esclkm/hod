@@ -124,7 +124,13 @@ if (!function_exists('minusone'))
 	   }
 	   return false;
    }
-   
+   function vimeo_id_from_url($url) {
+		if(preg_match("/(https?:\/\/)?(www\.)?(player\.)?vimeo\.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/", $url, $output_array)) {
+			return $output_array[5];
+		}
+		return false;
+
+   }
    function string_split($string)
    {
 	   return preg_split("/\r\n|\n|\r/", $string);

@@ -65,7 +65,11 @@
 				<!-- FOR {KEY}, {VALUE} IN {PHP.cfg.ind_sl4_youtube|string_split} -->
                 <div class="item <!--IF {KEY} == 0 -->active<!-- ENDIF -->">
                     <div class="iframe-container">
+						<!-- IF {VALUE|youtube_id_from_url} -->
                         <iframe src="https://www.youtube.com/embed/{VALUE|youtube_id_from_url}" frameborder="0" allowfullscreen></iframe>
+						<!-- ELSE -->
+						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/{VALUE|vimeo_id_from_url}?title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe>
+						<!-- ENDIF -->
                     </div>
                 </div>
 				<!-- ENDFOR -->
