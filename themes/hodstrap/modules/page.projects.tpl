@@ -24,15 +24,10 @@
                     </figure>
                 </div> -->           
             </div>
-        </div>
-    </section>
-
-    <!-- IF {PAGE_MAVATAR} -->
-    <section id="mini-gallery">
-        <div class="row">
+		<div class="row">
 			<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
 
-			<div class="col-md-3">
+			<div class="col-md-3 paddingbottom10 paddingtop10">
 				<a>
 				<img src="{PHP.cfg.testurl}{VALUE|cot_mav_thumb($this, 1200, 675, crop)}" alt="" class="img-responsive">
 				</a>
@@ -45,6 +40,12 @@
 			<!-- ENDIF -->
 			<!-- ENDFOR -->
         </div>
+        </div>
+    </section>
+
+    <!-- IF {PAGE_MAVATAR} -->
+    <section id="mini-gallery">
+
     </section>
     <!-- ENDIF -->	
 	
