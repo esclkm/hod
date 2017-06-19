@@ -26,25 +26,29 @@
             </div>
         </div>
     </section>
+
     <!-- IF {PAGE_MAVATAR} -->
-    <section id="gallery">
-        <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-				<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
-                <li data-target="#galleryCarousel" data-slide-to="{KEY|minus_one}" <!--IF {KEY|minus_one} == 0 -->class="active"<!-- ENDIF -->></li>
-				<!-- ENDFOR -->
-            </ol> 
-            <div class="carousel-inner" role="listbox">
-				<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
-                <div class="item <!--IF {KEY|minus_one} == 0 -->active<!-- ENDIF -->">
-                    <img src="{PHP.cfg.testurl}{VALUE|cot_mav_thumb($this, 1200, 675, crop)}" alt="" class="img-responsive">
-                </div>
-				<!-- ENDFOR -->
-            </div>
+    <section id="mini-gallery">
+        <div class="row">
+			<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
+
+			<div class="col-md-3">
+				<a>
+				<img src="{PHP.cfg.testurl}{VALUE|cot_mav_thumb($this, 1200, 675, crop)}" alt="" class="img-responsive">
+				</a>
+			</div>
+			<!-- IF {KEY} % 100 == 0 -->
+			<div class="clearfix hidden-md hidden-lg"></div>
+			<!-- ENDIF -->	
+			<!-- IF {KEY} % 100 == 0 -->
+			<div class="clearfix hidden-xs hidden-sm"></div>
+			<!-- ENDIF -->
+			<!-- ENDFOR -->
         </div>
     </section>
     <!-- ENDIF -->	
-
+	
+	
     <section id="specs">
         <div class="container">
             <div class="row">
@@ -80,7 +84,24 @@
     </section>
     <!-- ENDIF -->
 	
-
+    <!-- IF {PAGE_MAVATAR} -->
+    <section id="gallery">
+        <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+				<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
+                <li data-target="#galleryCarousel" data-slide-to="{KEY|minus_one}" <!--IF {KEY|minus_one} == 0 -->class="active"<!-- ENDIF -->></li>
+				<!-- ENDFOR -->
+            </ol> 
+            <div class="carousel-inner" role="listbox">
+				<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
+                <div class="item <!--IF {KEY|minus_one} == 0 -->active<!-- ENDIF -->">
+                    <img src="{PHP.cfg.testurl}{VALUE|cot_mav_thumb($this, 1200, 675, crop)}" alt="" class="img-responsive">
+                </div>
+				<!-- ENDFOR -->
+            </div>
+        </div>
+    </section>
+    <!-- ENDIF -->	
 	
 
 
