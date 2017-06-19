@@ -14,19 +14,37 @@
             </div>
             <a href="{PAGE_CAT|cot_url('page','c=$this')}" class="back-link">← <span>Назад к категориям</span></a>
             <div class="row">
-                <div class="col-xs-12 col-sm-8 text-col">
+                <div class="col-xs-12 col-sm-12 text-col">
 					{PAGE_TEXT}
                 </div>
-                <div class="col-xs-12 col-sm-4 image-col">
+                <!-- <div class="col-xs-12 col-sm-4 image-col">
                     <figure class="img">
-                        <img alt="" src="<!-- IF {PAGE_MAVATAR} -->{PHP.cfg.testurl}{PAGE_MAVATAR.1|cot_mav_thumb($this, 380, 243, crop)}<!-- ELSE -->{PHP.cfg.mainurl}/themes/{PHP.usr.theme}/images/no-image.png<!-- ENDIF -->" class="img-responsive">
+                        <img alt="" src="<!- IF {PAGE_MAVATAR} ->{PHP.cfg.testurl}{PAGE_MAVATAR.1|cot_mav_thumb($this, 380, 243, crop)}<!- ELSE ->{PHP.cfg.mainurl}/themes/{PHP.usr.theme}/images/no-image.png<!- ENDIF ->" class="img-responsive">
                         <figcaption class="text-center">{PAGE_MAVATAR.1.DESC}</figcaption>
                     </figure>
-                </div>            
+                </div> -->           
             </div>
         </div>
     </section>
-    
+    <!-- IF {PAGE_MAVATAR} -->
+    <section id="gallery">
+        <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+				<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
+                <li data-target="#galleryCarousel" data-slide-to="{KEY|minus_one}" <!--IF {KEY|minus_one} == 0 -->class="active"<!-- ENDIF -->></li>
+				<!-- ENDFOR -->
+            </ol> 
+            <div class="carousel-inner" role="listbox">
+				<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
+                <div class="item <!--IF {KEY|minus_one} == 0 -->active<!-- ENDIF -->">
+                    <img src="{PHP.cfg.testurl}{VALUE|cot_mav_thumb($this, 1200, 675, crop)}" alt="" class="img-responsive">
+                </div>
+				<!-- ENDFOR -->
+            </div>
+        </div>
+    </section>
+    <!-- ENDIF -->	
+
     <section id="specs">
         <div class="container">
             <div class="row">
@@ -61,25 +79,7 @@
 		<!-- ENDIF -->
     </section>
     <!-- ENDIF -->
-	<!-- IF {PAGE_MAVATAR} -->
-    <section id="gallery">
-        <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-				<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
-                <li data-target="#galleryCarousel" data-slide-to="{KEY|minus_one}" <!--IF {KEY|minus_one} == 0 -->class="active"<!-- ENDIF -->></li>
-				<!-- ENDFOR -->
-            </ol> 
-            <div class="carousel-inner" role="listbox">
-				<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
-                <div class="item <!--IF {KEY|minus_one} == 0 -->active<!-- ENDIF -->">
-                    <img src="{PHP.cfg.testurl}{VALUE|cot_mav_thumb($this, 1280, 455, crop)}" alt="" class="img-responsive">
-                </div>
-				<!-- ENDFOR -->
-            </div>
-        </div>
-    </section>
-    <!-- ENDIF -->	
-
+	
 
 	
 
