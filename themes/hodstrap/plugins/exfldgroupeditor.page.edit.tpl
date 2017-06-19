@@ -3,7 +3,7 @@
 <div class="form-horizontal">
 <!-- BEGIN: EXTRAFLD -->
 	<!-- IF {FORM_EXTRAFLD_TYPE} == 'separator' -->
-	<h4>{FORM_EXTRAFLD_TITLE}</h4>
+	<!-- IF {FORM_EXTRAFLD_TITLE} != "Доп"--><h4>{FORM_EXTRAFLD_TITLE}</h4><!-- ENDIF -->
 
 	<!-- ELSE -->
 	

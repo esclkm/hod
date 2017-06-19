@@ -1,16 +1,17 @@
 <!-- BEGIN: MAIN -->
-<table>
-	<tr>
-		<td colspan="2">Редактор экстраполей</td>
-	</tr>
-<!-- BEGIN: EXTRAFLD -->
+<div class="col-md-6">
+	<table class="table table-hover">
+
+		<!-- BEGIN: EXTRAFLD -->
+
 	<!-- IF {EXTRAFLD_TYPE} == 'separator' -->
-	<tr>
-		<td colspan="2">{EXTRAFLD_TITLE}</td>
-	</tr>
-	<!-- ELSE -->
-	
-		<!-- IF {EXTRAFLD_TYPE} != 'checkbox' -->
+	</table>
+</div>
+<div class="col-md-6">
+	<table class="table table-hover">
+		<!-- ELSE -->
+
+	<!-- IF {EXTRAFLD_TYPE} != 'checkbox' -->
 		<tr>
 			<td>{EXTRAFLD_TITLE}:</td>
 			<td>{EXTRAFLD}</td>
@@ -21,8 +22,9 @@
 			<td>{EXTRAFLD}</td>
 		</tr>		
 		<!-- ENDIF -->
-	<!-- ENDIF -->
-	
-<!-- END: EXTRAFLD -->
-</table>
+		<!-- ENDIF -->
+
+		<!-- END: EXTRAFLD -->
+	</table>
+</div>
 <!-- END: MAIN -->
