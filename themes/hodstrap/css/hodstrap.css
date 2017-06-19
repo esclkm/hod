@@ -7218,19 +7218,20 @@ header .white-arrow {
   padding-left: 45px;
 }
 #gallery-video {
+  margin-top: -25px;
   height: 100%;
 }
 #gallery-video .left-col,
 #gallery-video .right-col {
   height: 100%;
-  max-height: 510px;
+  /*max-height: @gallery-video-height;*/
   padding: 0;
 }
 #gallery-video .left-col img,
 #gallery-video .right-col img {
   width: 100%;
   object-fit: cover;
-  height: 510px;
+  /*height: @gallery-video-height;*/
 }
 .page-content + #contacts {
   margin-top: -25px;
