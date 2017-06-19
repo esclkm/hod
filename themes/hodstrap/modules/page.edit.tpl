@@ -18,6 +18,7 @@
 			<li class="active"><a href="#mainform" role="tab" data-toggle="tab">Основные настройки</a></li>
 			<li><a href="#attachform" role="tab" data-toggle="tab">Прикрепленные файлы</a></li>
 			<li><a href="#optionsform" role="tab" data-toggle="tab">Параметры страницы</a></li>
+			<li><a href="#harform" role="tab" data-toggle="tab">Технические характеристики</a></li>
 		</ul>
 
 		<!-- Tab panes -->
@@ -110,16 +111,17 @@
 				<div class="row paddingtop10">
 					<div class="col-md-6">
 						<div class="form-group">
+							<label>{PAGEEDIT_FORM_3D_TITLE}</label>
+							{PAGEEDIT_FORM_3D|cot_rc_modify('$this', 'class="form-control"')}
+						</div>
+					</div>	
+					<div class="col-md-6">
+						<div class="form-group">
 							<label>{PAGEEDIT_FORM_YOUTUBE_TITLE}</label>
 							{PAGEEDIT_FORM_YOUTUBE|cot_rc_modify('$this', 'class="form-control"')}
 						</div>
 					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<label>{PAGEEDIT_FORM_3D_TITLE}</label>
-							{PAGEEDIT_FORM_3D|cot_rc_modify('$this', 'class="form-control"')}
-						</div>
-					</div>						
+										
 				</div>
 			</div>
 			<div class="tab-pane" id="optionsform">
@@ -141,7 +143,10 @@
 					<div>{PAGEEDIT_FORM_PRICE} </div>
 				</div>
 								
-			</div>	
+			</div>
+			<div class="tab-pane" id="harform">
+				{PAGEEDIT_EXFLDGROUPEDITOR}
+			</div>
 		</div>			
 		<div class="publish margintop10 marginbottom10">
 		<!-- IF {PHP.usr_can_publish} -->
