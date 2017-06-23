@@ -34,16 +34,16 @@
 
 					</a>
 				</div>
-				<!-- IF {KEY} % 2 == 1 -->
+				<!-- IF {KEY} % 2 == 0 -->
 				<div class="clearfix hidden-lg"></div>
 				<!-- ENDIF -->	
-				<!-- IF {KEY} % 3 == 1 -->
+				<!-- IF {KEY} % 4 == 0 -->
 				<div class="clearfix visible-lg"></div>
 				<!-- ENDIF -->
 				<!-- ENDFOR -->
-				<!-- IF {PAGE_MAVATAR|length} > 6 -->
+				<!-- IF {PAGE_MAVATAR|count} > 6 -->
 				</div>
-				{PAGE_MAVATAR|length}
+				{PAGE_MAVATAR|count}
 				<!-- ENDIF -->
 				<div class="clearfix"></div>
 				<!-- IF {PAGE_MAVATAR|length} > 6 -->
