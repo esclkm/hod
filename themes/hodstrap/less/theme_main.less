@@ -54,8 +54,8 @@ table {
     }
 }
 .text-style {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 22px;
     @media (max-width: 767px) {
         font-size: 18px;
     }
@@ -345,7 +345,7 @@ header {
     color: #fff;
     p, 
     figcaption{
-        margin: 0 auto 20px;
+        margin: 0 auto 10px;
         .text-style;
     }
     a:not([class]), .back-link {
@@ -546,9 +546,12 @@ header {
     background: -o-linear-gradient(left, #fff 50%, #0f0f0f 50%);
     background: linear-gradient(to right, #fff 50%, #0f0f0f 50%);
     .feedback-col {
-        background-color: #0f0f0f;
-        color: #fff;
+        /*background-color: #0f0f0f;*/
+        color: #0f0f0f;
     }
+	.contacts-col {
+		color:#fff;
+	}
     .text-col {
         /*min-height: 480px;*/
         p {
@@ -565,18 +568,18 @@ header {
         padding: 0;
         margin: 0;
         font-family: @regular-font, sans-serif;
-        font-size: 24px;
+        font-size: 20px;
         text-transform: uppercase;
-        color: #1a1a1a;
+        color: #fff;
         opacity: .6;
     }
     li {
         &.active a {
-            background-color: #fff;
+            background-color: #0f0f0f;
             opacity: 1;
         }
         &:hover a {
-            background-color: #fff;
+            background-color: #0f0f0f;
             opacity: .8;
         }
     }
@@ -589,15 +592,12 @@ header {
     .rights {
         font-size: 11px;
         opacity: .6;
-        position: absolute;
-        top: 122px;
-        right: 40px;
-        bottom: 0;
+		text-align: right;
 
     }
     .showMap {
         .link-underline;
-        color: #282828;
+        color: #fff;
         display: block;
         margin-top: 22px;
     }
@@ -607,7 +607,7 @@ header {
     }
     .links a {
         .link-underline;
-        color: #282828;
+        color: #fff;
         position: relative;
         display: inline-block;
         margin-right: 20px;
@@ -633,14 +633,14 @@ header {
         display: block;
         width: 100%;
         border: none;
-        border-bottom: 1px solid #1C1C1C;
+        border-bottom: 1px solid #0f0f0f;
         background-color: transparent;
 
 		&:focus{ 
 			outline: none; 
 		}
 		& ~ label {
-			color: #fff; 
+			color: #0f0f0f; 
 			font-size: 18px;
 			font-family: @thin-font, sans-serif;
 			position: absolute;
@@ -656,7 +656,7 @@ header {
 		&:focus ~ label, &:valid ~ label{
 			top: -10px;
 			font-size: 14px;
-			color: #fff;
+			color: #282828;
 		}
 		& ~ .bar { 
 			position:relative; 
@@ -724,7 +724,7 @@ header {
     }
     p, li {
         font-family: 'OpenSans', sans-serif;
-        font-size: 14px;
+        font-size: 16px;
     }
     ul {
         padding-left: 15px;
@@ -734,9 +734,10 @@ header {
     }
     figcaption {
         font-family: @light-font, sans-serif;
-        font-style: italic;
-        margin-top: 20px;
     }
+	a .img-white  img-white {
+		color: #fff;
+	}
     article {
         border: 0;
         border-bottom: 1px solid #fff;
@@ -747,7 +748,7 @@ header {
     }
 
 	p {
-        margin: 0 auto 24px;
+        margin: 0 auto 10px;
     } 
 	#portfolio-page {
 
@@ -781,8 +782,7 @@ header {
     .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
         border: 0;
         border-bottom: 1px solid #ddd;
-        max-width: 65px;
-        font-size: 12px;
+        font-size: 14px;
         padding: 11px 15px;
     }
 }
@@ -801,18 +801,18 @@ header {
         }
     }
 }
-@gallery-video-height: 510px;
+
 #gallery-video {
 	margin-top: -25px;
     height: 100%;
     .left-col, .right-col {
         height: 100%;
-        /*max-height: @gallery-video-height;*/
+        
         padding: 0;
         img {
             width: 100%;
             object-fit: cover;
-            /*height: @gallery-video-height;*/
+
         }
     }
 

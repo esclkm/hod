@@ -26,7 +26,9 @@
 			<span class="bar"></span>
 			<label>Сообщение</label>
 		</div>
-		<button class="btn white-btn">Отправить заявку</button>	
+		<div class="text-right">
+			<button class="btn btn-default">Отправить заявку</button>	
+		</div>
 	</form>
 	
 

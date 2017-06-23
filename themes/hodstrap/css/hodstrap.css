@@ -6388,8 +6388,8 @@ table tr td {
   text-decoration: none;
 }
 .text-style {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 22px;
 }
 @media (max-width: 767px) {
   .text-style {
@@ -6680,9 +6680,9 @@ header .white-arrow {
 .page-content p,
 #company figcaption,
 .page-content figcaption {
-  margin: 0 auto 20px;
-  font-size: 14px;
-  line-height: 24px;
+  margin: 0 auto 10px;
+  font-size: 16px;
+  line-height: 22px;
 }
 @media (max-width: 767px) {
   #company p,
@@ -6807,8 +6807,8 @@ header .white-arrow {
 #portfolio p,
 #portfolio table {
   font-family: 'PFDinTextCompPro-Light', sans-serif;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 22px;
   letter-spacing: 0.1em;
   margin: 21px 0 27px;
 }
@@ -6948,7 +6948,10 @@ header .white-arrow {
   background: linear-gradient(to right, #ffffff 50%, #0f0f0f 50%);
 }
 #contacts .feedback-col {
-  background-color: #0f0f0f;
+  /*background-color: #0f0f0f;*/
+  color: #0f0f0f;
+}
+#contacts .contacts-col {
   color: #fff;
 }
 #contacts .text-col {
@@ -6967,17 +6970,17 @@ header .white-arrow {
   padding: 0;
   margin: 0;
   font-family: 'PFDinTextCompPro-Regular', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
-  color: #1a1a1a;
+  color: #fff;
   opacity: .6;
 }
 #contacts li.active a {
-  background-color: #fff;
+  background-color: #0f0f0f;
   opacity: 1;
 }
 #contacts li:hover a {
-  background-color: #fff;
+  background-color: #0f0f0f;
   opacity: .8;
 }
 #contacts .nav-pills > li + li {
@@ -6989,15 +6992,12 @@ header .white-arrow {
 #contacts .rights {
   font-size: 11px;
   opacity: .6;
-  position: absolute;
-  top: 122px;
-  right: 40px;
-  bottom: 0;
+  text-align: right;
 }
 #contacts .showMap {
   font-family: 'PFDinTextCompPro-Regular', sans-serif;
   font-size: 18px;
-  color: #282828;
+  color: #fff;
   display: block;
   margin-top: 22px;
 }
@@ -7019,7 +7019,7 @@ header .white-arrow {
 #contacts .links a {
   font-family: 'PFDinTextCompPro-Regular', sans-serif;
   font-size: 18px;
-  color: #282828;
+  color: #fff;
   position: relative;
   display: inline-block;
   margin-right: 20px;
@@ -7057,7 +7057,7 @@ header .white-arrow {
   display: block;
   width: 100%;
   border: none;
-  border-bottom: 1px solid #1C1C1C;
+  border-bottom: 1px solid #0f0f0f;
   background-color: transparent;
   /* active state */
   /* active state */
@@ -7068,7 +7068,7 @@ header .white-arrow {
 }
 #contacts input ~ label,
 #contacts textarea ~ label {
-  color: #fff;
+  color: #0f0f0f;
   font-size: 18px;
   font-family: 'PFDinTextCompPro-XThin', sans-serif;
   position: absolute;
@@ -7085,7 +7085,7 @@ header .white-arrow {
 #contacts textarea:valid ~ label {
   top: -10px;
   font-size: 14px;
-  color: #fff;
+  color: #282828;
 }
 #contacts input ~ .bar,
 #contacts textarea ~ .bar {
@@ -7150,7 +7150,7 @@ header .white-arrow {
 .page-content p,
 .page-content li {
   font-family: 'OpenSans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 .page-content ul {
   padding-left: 15px;
@@ -7160,8 +7160,9 @@ header .white-arrow {
 }
 .page-content figcaption {
   font-family: 'PFDinTextCompPro-Light', sans-serif;
-  font-style: italic;
-  margin-top: 20px;
+}
+.page-content a .img-white img-white {
+  color: #fff;
 }
 .page-content article {
   border: 0;
@@ -7172,7 +7173,7 @@ header .white-arrow {
   border: 0;
 }
 .page-content p {
-  margin: 0 auto 24px;
+  margin: 0 auto 10px;
 }
 .page-content #portfolio-page {
   /*		.row {
@@ -7204,8 +7205,7 @@ header .white-arrow {
 .table-col .table > thead > tr > th {
   border: 0;
   border-bottom: 1px solid #ddd;
-  max-width: 65px;
-  font-size: 12px;
+  font-size: 14px;
   padding: 11px 15px;
 }
 #project-page .page-content .row > div.image-col {
@@ -7224,14 +7224,12 @@ header .white-arrow {
 #gallery-video .left-col,
 #gallery-video .right-col {
   height: 100%;
-  /*max-height: @gallery-video-height;*/
   padding: 0;
 }
 #gallery-video .left-col img,
 #gallery-video .right-col img {
   width: 100%;
   object-fit: cover;
-  /*height: @gallery-video-height;*/
 }
 .page-content + #contacts {
   margin-top: -25px;

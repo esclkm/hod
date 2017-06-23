@@ -216,16 +216,6 @@ $(function() {
 		});
 	});
 	  
-/*	$('.video_overlay').videoBG({
-		mp4:'themes/landing/video/video.mp4',
-	//	ogv:'tunnel_animation.ogv',
-		webm:'themes/landing/video/video.webm',
-		poster:'themes/landing/video/video.jpg',
-		loop:true
-	});*/
-});
-
-$(function () {
 	$('.sameh').matchHeight({
 		byRow: true,
 		property: 'height',
@@ -237,5 +227,10 @@ $(function () {
 		property: 'height',
 		target: null,
 		remove: false
+	});
+	$('.hiddenports_').click(function(){
+		$('.hiddenports').slideDown('slow');
+		$('.hiddenports_').hide();
+		return false;
 	});
 });

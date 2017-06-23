@@ -21,33 +21,33 @@
             </div>
 			<div class="row">
 				<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
-				<!-- IF {KEY} == 6 -->
+				<!-- IF {KEY} == 9 -->
 				<div class="hiddenports" style="display: none;">
 				<!-- ENDIF -->
-				<div class="col-lg-3 col-md-6 col-xs-6 paddingbottom10 paddingtop10">
+				<div class="col-lg-3 col-md-3 col-xs-6 paddingbottom10 paddingtop10">
 
-					<a href="{VALUE.check_thumb_1200_675_crop}"  class="fancybox gal i_text" rel="gallery1" >	
-						<figure class="img">
+					<a href="{VALUE.check_thumb_1200_675_crop}"  class="fancybox i_text" rel="gallery1" >	
+						<figure class="img img-white">
 							<img src="{VALUE|cot_mav_thumb($this, 370, 300, width)}" class="img-responsive" alt="{VALUE.DESC}" title="{VALUE.TEXT}"/>
-							<figcaption class="text-center">{VALUE.TEXT}</figcaption>
+							<figcaption class="text-center hidden-md">{VALUE.TEXT}</figcaption>
 						</figure>
 
 					</a>
 				</div>
 				<!-- IF {KEY} % 2 == 0 -->
-				<div class="clearfix hidden-lg"></div>
+				<div class="clearfix hidden-lg hidden-md"></div>
 				<!-- ENDIF -->	
 				<!-- IF {KEY} % 4 == 0 -->
-				<div class="clearfix visible-lg"></div>
+				<div class="clearfix visible-lg visible-md"></div>
 				<!-- ENDIF -->
 				<!-- ENDFOR -->
 				<!-- IF {PAGE_MAVATAR|count} > 6 -->
 				</div>
-				{PAGE_MAVATAR|count}
+				
 				<!-- ENDIF -->
 				<div class="clearfix"></div>
-				<!-- IF {PAGE_MAVATAR|length} > 6 -->
-				<div class="text-center"><a href="#" class="hiddenports_ btn btn-default"><span class="glyphicon glyphicon-chevron-down"></span>  Показать больше </a></div>
+				<!-- IF {PAGE_MAVATAR|count} > 6 -->
+				<div class="text-center"><button class="hiddenports_ btn  intro-btn white-btn">Показать больше</button></div>
 				<!-- ENDIF -->
 			</div>
 			<div class="row">
@@ -95,6 +95,23 @@
         </div>
     </section>
 
+		<!-- IF {PHP.usr.isadmin} -->
+		<div class="container container-fluid">
+			<div class="paddingtop10 paddingbottom10">
+				<!-- Split button -->
+
+				<a href="{PHP|cot_url('admin')}" class="btn btn-default"><span class="glyphicon glyphicon-cog"></span> Админ-панель</a>
+
+				<a href="{PHP|cot_url('users','m=profile')}" class="btn btn-default"><span class="glyphicon glyphicon-user"></span> {PHP.L.Profile}</a> 
+				<a href="{PAGE_CAT|cot_url('page','m=add&c=$this')}" class="btn btn-default"><span class="glyphicon glyphicon-plus-sign"></span> Добавить страницу</a>
+				{PAGE_ADMIN_CLONE|cot_rc_modify('$this', 'class="btn btn-default"')}
+
+				<a href="{PAGE_ADMIN_EDIT_URL}" class="btn btn-default"><span class="glyphicon glyphicon-edit"></span> Правка</a>
+				<a href="{PAGE_ADMIN_DELETE_URL}" class="confirmLink btn btn-default"><span class="glyphicon glyphicon-trash"></span> Удалить</a> 
+				<a href="{PHP.out.loginout_url}" class="btn btn-default"><span class="glyphicon glyphicon-log-out"></span> {PHP.L.Logout}</a> 
+			</div>
+		</div>
+		<!-- ENDIF -->	
 
     <!-- IF {PAGE_MAVATAR} -->
     <section id="gallery">
@@ -116,23 +133,6 @@
     <!-- ENDIF -->	
 
 
-
-	<!-- IF {PHP.usr.isadmin} -->
-	<div class="container container-fluid">
-		<div class="paddingtop10 paddingbottom10">
-			<!-- Split button -->
-
-			<a href="{PHP|cot_url('admin')}" class="btn btn-default"><span class="glyphicon glyphicon-cog"></span> Админ-панель</a>
-
-			<a href="{PHP|cot_url('users','m=profile')}" class="btn btn-default"><span class="glyphicon glyphicon-user"></span> {PHP.L.Profile}</a> 
-			<a href="{PAGE_CAT|cot_url('page','m=add&c=$this')}" class="btn btn-default"><span class="glyphicon glyphicon-plus-sign"></span> Добавить страницу</a>
-			{PAGE_ADMIN_CLONE|cot_rc_modify('$this', 'class="btn btn-default"')}
-
-			<a href="{PAGE_ADMIN_EDIT_URL}" class="btn btn-default"><span class="glyphicon glyphicon-edit"></span> Правка</a>
-			<a href="{PAGE_ADMIN_DELETE_URL}" class="confirmLink btn btn-default"><span class="glyphicon glyphicon-trash"></span> Удалить</a> 
-			<a href="{PHP.out.loginout_url}" class="btn btn-default"><span class="glyphicon glyphicon-log-out"></span> {PHP.L.Logout}</a> 
-		</div>
-	</div>
-	<!-- ENDIF -->		
+	
 </div>
 <!-- END: MAIN -->
