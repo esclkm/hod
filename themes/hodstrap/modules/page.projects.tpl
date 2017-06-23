@@ -21,8 +21,10 @@
             </div>
 			<div class="row">
 				<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
-
-				<div class="col-lg-3 col-md-4 col-xs-6 paddingbottom10 paddingtop10">
+				<!-- IF {KEY} == 6 -->
+				<div class="hiddenports" style="display: none;">
+				<!-- ENDIF -->
+				<div class="col-lg-3 col-md-6 col-xs-6 paddingbottom10 paddingtop10">
 
 					<a href="{VALUE.check_thumb_1200_675_crop}"  class="fancybox gal i_text" rel="gallery1" >	
 						<figure class="img">
@@ -32,13 +34,20 @@
 
 					</a>
 				</div>
-				<!-- IF {KEY} % 100 == 0 -->
+				<!-- IF {KEY} % 6 == 1 -->
 				<div class="clearfix hidden-md hidden-lg"></div>
 				<!-- ENDIF -->	
-				<!-- IF {KEY} % 100 == 0 -->
-				<div class="clearfix hidden-xs hidden-sm"></div>
+				<!-- IF {KEY} % 3 == 1 -->
+				<div class="clearfix visible-lg"></div>
 				<!-- ENDIF -->
 				<!-- ENDFOR -->
+				<!-- IF {PAGE_MAVATAR|length} > 6 -->
+				</div>
+				<!-- ENDIF -->
+				<div class="clearfix"></div>
+				<!-- IF {PAGE_MAVATAR|length} > 6 -->
+				<div class="text-center"><a href="#" class="hiddenports_ btn btn-default"><span class="glyphicon glyphicon-chevron-down"></span>  Показать больше </a></div>
+				<!-- ENDIF -->
 			</div>
 			<div class="row">
                 <div class="col-xs-12 col-sm-12 text-col">
