@@ -34,8 +34,8 @@
 
 					</a>
 				</div>
-				<!-- IF {KEY} % 6 == 1 -->
-				<div class="clearfix hidden-md hidden-lg"></div>
+				<!-- IF {KEY} % 2 == 1 -->
+				<div class="clearfix hidden-lg"></div>
 				<!-- ENDIF -->	
 				<!-- IF {KEY} % 3 == 1 -->
 				<div class="clearfix visible-lg"></div>
@@ -43,6 +43,7 @@
 				<!-- ENDFOR -->
 				<!-- IF {PAGE_MAVATAR|length} > 6 -->
 				</div>
+				{PAGE_MAVATAR|length}
 				<!-- ENDIF -->
 				<div class="clearfix"></div>
 				<!-- IF {PAGE_MAVATAR|length} > 6 -->
