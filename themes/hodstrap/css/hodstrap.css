@@ -7136,6 +7136,31 @@ header .white-arrow {
 .page-content .container {
   position: relative;
 }
+.jqmWindow .page-content {
+  padding-top: 0;
+  margin-top: -90px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.jqmWindow .page-content table {
+  width: 100% !important;
+}
+.jqmWindow .page-content td {
+  text-align: center;
+  padding-top: 30px;
+}
+.jqmWindow .page-content a {
+  font-family: 'PFDinTextCompPro-Medium', sans-serif;
+  background-color: #fff;
+  color: #000;
+  margin: 10px auto 44px;
+  font-size: 18px;
+  padding: 4px 32px;
+}
+.jqmWindow .page-content a:hover {
+  text-decoration: none;
+  background-color: #e1e1e1;
+}
 .page-content .row {
   margin-top: 20px;
   /*padding: 0 15px;*/

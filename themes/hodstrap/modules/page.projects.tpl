@@ -28,7 +28,7 @@
 
 					<a href="{VALUE.check_thumb_1200_675_crop}"  class="fancybox i_text" rel="gallery1" >	
 						<figure class="img img-white">
-							<img src="{VALUE|cot_mav_thumb($this, 370, 300, width)}" class="img-responsive" alt="{VALUE.DESC}" title="{VALUE.TEXT}"/>
+							<img src="{VALUE|cot_mav_thumb($this, 370, 300, crop)}" class="img-responsive" alt="{VALUE.DESC}" title="{VALUE.TEXT}"/>
 							<figcaption class="text-center hidden-md">{VALUE.TEXT}</figcaption>
 						</figure>
 
