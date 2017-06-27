@@ -7184,10 +7184,9 @@ header .white-arrow {
 .page-content .list-project {
   margin: 10px 0 10px 0;
   font-family: 'PFDinTextCompPro-Light', sans-serif;
-  font-style: italic;
 }
 .page-content .list-project .text-center {
-  padding-top: 14px;
+  padding-top: 4px;
 }
 .page-content .list-project .text-center a {
   text-decoration: none;

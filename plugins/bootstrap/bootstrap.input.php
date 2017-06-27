@@ -20,6 +20,15 @@ defined('COT_CODE') or die('Wrong URL.');
 
 require_once $cfg['plugins_dir']."/bootstrap/lessphp/Less.php";
 //cot_print('111');
+function get_last_date_file($folder)
+{
+	$files = glob($folder."*.less");
+	$files_time = array_map("filemtime", $files);
+	arsort($files_time);
+	#cot_print($files_time);
+	return $files_time[key($files_time)];
+}
+
 function compile_botstrap_less ($theme, $input, $output='', $compress =false)
 {
 	global $cfg;
@@ -31,8 +40,9 @@ function compile_botstrap_less ($theme, $input, $output='', $compress =false)
 	{
 		$filetimecss = filemtime($output);
 		$filetimeless = filemtime($input);
+		#cot_print(get_last_date_file($cfg['themes_dir'].'/'.$theme.'/less/'));
 	//	cot_print('css', cot_date('datetime_full', $filetimecss), 'less', cot_date('datetime_full', $filetimeless), cot_date('datetime_full'), $filetimecss > $filetimeless);
-		if($filetimecss > $filetimeless)
+		if($filetimecss > get_last_date_file($cfg['themes_dir'].'/'.$theme.'/less/'))
 		{
 			return false;
 		}
