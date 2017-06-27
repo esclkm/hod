@@ -7219,11 +7219,6 @@ header .white-arrow {
 .page-content .list-project .text-center a {
   text-decoration: none;
 }
-.back-link {
-  position: absolute;
-  right: 15px;
-  top: 56px;
-}
 .table-col .table > tbody > tr > td,
 .table-col .table > tbody > tr > th,
 .table-col .table > tfoot > tr > td,

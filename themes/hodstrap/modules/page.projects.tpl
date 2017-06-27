@@ -2,17 +2,18 @@
 <div id="project-page">    
     <section class="page-content">
         <div class="container">
-            <div class="row">
-                <p class="h1">
-					{PAGE_SHORTTITLE} 
-					<!-- IF {PHP.usr.isadmin} -->
-					&nbsp;<a  class="small" href="{PAGE_ADMIN_EDIT_URL}">
-						<span class="glyphicon glyphicon-edit"></span>
-					</a>
-					<!-- ENDIF -->	
-				</p>
-            </div>
-            <a href="{PAGE_CAT|cot_url('page','c=$this')}" class="back-link">← <span>Назад к категориям</span></a>
+
+			<p class="h1">
+				{PAGE_SHORTTITLE} 
+				<!-- IF {PHP.usr.isadmin} -->
+				&nbsp;<a  class="small" href="{PAGE_ADMIN_EDIT_URL}">
+					<span class="glyphicon glyphicon-edit"></span>
+				</a>
+				<!-- ENDIF -->	
+				<a href="{PAGE_CAT|cot_url('page','c=$this')}" class="pull-right back-link">← <span>Назад к категориям</span></a>
+			</p>
+
+            
             <div class="row">
                 <div class="col-xs-12 col-sm-12 text-col">
 					{PAGE_ROW_TEXT_SHORT}
@@ -28,7 +29,7 @@
 
 					<a href="{VALUE.check_thumb_1200_675_crop}"  class="fancybox i_text" rel="gallery1" >	
 						<figure class="img img-white">
-							<img src="{VALUE|cot_mav_thumb($this, 370, 208, crop)}" class="img-responsive" alt="{VALUE.DESC}" title="{VALUE.TEXT}"/>
+							<img src="{VALUE|cot_mav_thumb($this, 370, 208, crop)}" class="img-responsive" data-test="1" alt="{VALUE.DESC}" title="{VALUE.TEXT}"/>
 							<figcaption class="text-center hidden-md">{VALUE.TEXT}</figcaption>
 						</figure>
 
