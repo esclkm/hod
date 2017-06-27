@@ -67,27 +67,27 @@
 				</div>
 			</div>     
 
-			<div class="col-xs-12 links clearfix">
+			<div class="links">
 				<!-- IF {PHP.cfg.footer_social_vk} -->
-				<a href="{PHP.cfg.footer_social_vk}">
+				<a href="{PHP.cfg.footer_social_vk}" target="_blank">
 					<i class="fa-vk fa"></i>
 					<span>Вконтакте</span> →
 				</a>
 				<!-- ENDIF -->
 				<!-- IF {PHP.cfg.footer_social_instagram} -->
-				<a href="{PHP.cfg.footer_social_instagram}">
+				<a href="{PHP.cfg.footer_social_instagram}" target="_blank">
 					<i class="fa fa-instagram"></i>
 					<span>Инстаграм</span> →
 				</a>
 				<!-- ENDIF -->
 				<!-- IF {PHP.cfg.footer_social_drive2} -->
-				<a href="{PHP.cfg.footer_social_drive2}">
+				<a href="{PHP.cfg.footer_social_drive2}" target="_blank">
 					<i class=" small-icon drive2"></i>
 					<span>Drive2</span> →
 				</a>
 				<!-- ENDIF -->
 				<!-- IF {PHP.cfg.footer_social_youtube} -->
-				<a href="{PHP.cfg.footer_social_youtube}">
+				<a href="{PHP.cfg.footer_social_youtube}" target="_blank">
 					<i class="fa fa-youtube"></i>
 					<span>Youtube</span> →
 				</a>

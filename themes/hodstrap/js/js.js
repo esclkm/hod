@@ -32,6 +32,8 @@ $(document).ready(function () {
 		$('body,html').animate({scrollTop: $(document).height()}, 800);
 		return false;
 	});
+	
+	$('input[name="rcb_phone"]').mask('+7 (000) 000-00-00');
 });
 
 

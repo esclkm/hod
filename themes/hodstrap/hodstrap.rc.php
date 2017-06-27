@@ -37,6 +37,8 @@ cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/js/jquery.matchHeight.js'
 cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/js/bootstrap.js');
 
 cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/js/masonry.pkgd.min.js');
+cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/js/jquery.mask.min.js');
+
 
 // навигатор
 // https://github.com/davist11/jQuery-One-Page-Nav

@@ -6994,6 +6994,7 @@ header .white-arrow {
   margin-top: 14px;
 }
 #contacts .rights {
+  margin-top: 20px;
   font-size: 11px;
   opacity: .6;
   text-align: right;
@@ -7090,6 +7091,8 @@ header .white-arrow {
   top: -10px;
   font-size: 14px;
   color: #282828;
+  background: #fff;
+  width: 92%;
 }
 #contacts input ~ .bar,
 #contacts textarea ~ .bar {
