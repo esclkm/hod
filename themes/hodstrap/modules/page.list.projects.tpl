@@ -5,12 +5,13 @@
 	<div class="container">
 		<div id="portfolio-page">
 
-			<div class="row">
-				<p class="h1">{LIST_CATTITLE}</p>
-			</div>
-			<!-- IF {PHP.c} != 'projects' -->
-			<a href="{PHP|cot_url('page', 'c=projects')}" class="back-link">← <span>Назад к категориям</span></a>
-			<!-- ENDIF -->
+			<p class="h1">
+				{LIST_CATTITLE}
+				<!-- IF {PHP.c} != 'projects' -->
+				<a href="{PHP|cot_url('page', 'c=projects')}" class="back-link">← <span>Назад к категориям</span></a>
+				<!-- ENDIF -->
+			</p>
+
 			<!-- IF {LIST_ROWCAT_URL} -->
 
 			<div class="text-justify textbox">{LIST_TEXT}</div>
