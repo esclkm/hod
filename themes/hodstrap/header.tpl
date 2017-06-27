@@ -70,7 +70,7 @@
 			</nav>
 			<!-- IF {PHP.env.location} == 'home' -->
 			<!-- Header -->
-			<header id="page-top">
+			<header id="page-top" style="background-image:{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/images/logo.png; {PHP.cfg.ind_sl0_img}">
 				<div class="container text-center">
 					<div class="row">
 						<div class="intro-logo">

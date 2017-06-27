@@ -6333,6 +6333,9 @@ button.close {
 .modal-open[style] {
   padding-right: 0px !important;
 }
+.label.label-default {
+  color: #000000;
+}
 body {
   font-size: 19px;
   font-weight: 400;
