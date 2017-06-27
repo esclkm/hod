@@ -80,8 +80,8 @@
 					<div class="row">
 						<div class="intro-text">
 							<p>{PHP.cfg.subtitle}</p>
-							<button class="btn intro-btn white-btn">Оставить заявку</button>
-							<a href=""><i class="small-icon white-arrow"></i></a>
+							<button class="btn intro-btn white-btn toBottom">Оставить заявку</button>
+							<a href="" class="toBottom"><i class="small-icon white-arrow"></i></a>
 						</div> 
 					</div>
 

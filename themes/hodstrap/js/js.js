@@ -28,6 +28,10 @@ $(document).ready(function () {
 		$('body,html').animate({scrollTop: 0}, 800);
 		return false;
 	});
+	$('.toBottom').click(function () {
+		$('body,html').animate({scrollTop: $(document).height()}, 800);
+		return false;
+	});
 });
 
 

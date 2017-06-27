@@ -11,7 +11,7 @@ h1, .h1 {
     font-family: @medium-font, sans-serif !important;
     font-size: 41px !important;
     line-height: 41px !important;
-    text-transform: uppercase !important;
+    text-transform: uppercase;
     margin-top: 20px !important;
     margin-bottom: 10px !important;
 }
@@ -350,8 +350,12 @@ header {
     }
     a:not([class]), .back-link {
         color: #fff;
+		text-transform: none;
+		
         .link-underline;
         text-decoration: underline;
+		
+		
         &:hover {
             text-decoration: underline;
         }

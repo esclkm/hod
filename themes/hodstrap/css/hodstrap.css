@@ -6348,7 +6348,7 @@ h1,
   font-family: 'PFDinTextCompPro-Medium', sans-serif !important;
   font-size: 41px !important;
   line-height: 41px !important;
-  text-transform: uppercase !important;
+  text-transform: uppercase;
   margin-top: 20px !important;
   margin-bottom: 10px !important;
 }
@@ -6700,6 +6700,7 @@ header .white-arrow {
 #company .back-link,
 .page-content .back-link {
   color: #fff;
+  text-transform: none;
   font-family: 'PFDinTextCompPro-Regular', sans-serif;
   font-size: 18px;
   text-decoration: underline;
