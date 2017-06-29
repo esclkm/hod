@@ -6697,6 +6697,8 @@ header .white-arrow {
 }
 #company a:not([class]),
 .page-content a:not([class]),
+#company a figcaption,
+.page-content a figcaption,
 #company .back-link,
 .page-content .back-link {
   color: #fff;
@@ -6708,6 +6710,8 @@ header .white-arrow {
 @media (max-width: 767px) {
   #company a:not([class]),
   .page-content a:not([class]),
+  #company a figcaption,
+  .page-content a figcaption,
   #company .back-link,
   .page-content .back-link {
     font-size: 24px;
@@ -6715,21 +6719,31 @@ header .white-arrow {
 }
 #company a:not([class]) span,
 .page-content a:not([class]) span,
+#company a figcaption span,
+.page-content a figcaption span,
 #company .back-link span,
 .page-content .back-link span {
   text-decoration: underline;
 }
 #company a:not([class]):hover,
 .page-content a:not([class]):hover,
+#company a figcaption:hover,
+.page-content a figcaption:hover,
 #company .back-link:hover,
 .page-content .back-link:hover {
   text-decoration: none;
 }
 #company a:not([class]):hover,
 .page-content a:not([class]):hover,
+#company a figcaption:hover,
+.page-content a figcaption:hover,
 #company .back-link:hover,
 .page-content .back-link:hover {
   text-decoration: underline;
+}
+#company a figcaption,
+.page-content a figcaption {
+  text-decoration: none;
 }
 #company {
   padding-bottom: 20px;
@@ -6969,6 +6983,15 @@ header .white-arrow {
 }
 #contacts .address {
   padding: 27px 0;
+}
+#contacts a.email {
+  /*text-transform: uppercase;*/
+  color: #fff;
+  opacity: .8;
+}
+#contacts a.email:hover {
+  background-color: #0f0f0f;
+  opacity: 1;
 }
 #contacts .address li a {
   padding: 0;

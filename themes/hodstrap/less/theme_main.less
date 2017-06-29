@@ -347,8 +347,9 @@ header {
     figcaption{
         margin: 0 auto 10px;
         .text-style;
+		
     }
-    a:not([class]), .back-link {
+    a:not([class]), a figcaption, .back-link {
         color: #fff;
 		text-transform: none;
 		
@@ -360,6 +361,9 @@ header {
             text-decoration: underline;
         }
     }
+	a figcaption {
+		text-decoration: none;
+	}
 }
 #company {
     padding-bottom:  20px;
@@ -568,6 +572,16 @@ header {
     .address {
         padding: 27px 0;
     }
+	a.email {
+        /*text-transform: uppercase;*/
+        color: #fff;
+        opacity: .8;
+		
+		&:hover {
+            background-color: #0f0f0f;
+            opacity: 1;			
+		}
+	}
     .address li a {
         padding: 0;
         margin: 0;

@@ -87,7 +87,7 @@
             <div class="container text-center">
                 <div class="row read-more">
                     <i class="small-icon youtube-big"></i>
-                    <a href="{PHP.cfg.ind_sl4_text}"><span>{PHP.cfg.ind_sl4_link_title}</span> →</a>
+                    <a href="{PHP.cfg.ind_sl4_text}" target="_blank"><span>{PHP.cfg.ind_sl4_link_title}</span> →</a>
                 </div>
             </div>            
         </div>

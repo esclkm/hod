@@ -18,30 +18,49 @@
 
 	<div class="container container-fluid">
 		<div class="row">
-			<div class="<!-- IF {PAGE_MAVATAR} -->col-md-8<!-- ELSE --> col-md-12<!-- ENDIF -->">		
-				<div class="text-justify textbox">{PAGE_TEXT}</div>
-				{PAGE_COMMENTS_DISPLAY}       
+			<div class="col-xs-12 col-sm-12 text-col">
+				{PAGE_ROW_TEXT_SHORT}
 			</div>
 
-			<!-- IF {PAGE_MAVATAR} -->
-			<div class="col-md-4">
-				<div class="row maansorygal1">
-					<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
-					<div class="<!-- IF {KEY} > 1 -->col-sm-6<!-- ELSE -->col-sm-12<!-- ENDIF--> grid-sizer1">
-						<a href="{VALUE.check_thumb_1140_755_width}"  class="fancybox gal i_text" rel="gallery1" >	
-							<figure class="img">
-								<img src="{VALUE|cot_mav_thumb($this, 370, 300, width)}" class="img-responsive" alt="{VALUE.DESC}" title="{VALUE.TEXT}"/>
-								<figcaption class="text-center">{VALUE.TEXT}</figcaption>
-							</figure>
-
-						</a>
-					</div>
-					<!-- ENDFOR -->
-				</div>
-				<div class="clearfix"></div>	
-			</div>
-			<!-- ENDIF -->	
 		</div>
+		<div class="row">
+			<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
+			<!-- IF {KEY} == 9 -->
+			<div class="hiddenports" style="display: none;">
+				<!-- ENDIF -->
+				<div class="col-lg-3 col-md-3 col-xs-6 paddingbottom10 paddingtop10">
+
+					<a href="{VALUE.file}"  class="fancybox i_text" rel="gallery1" >	
+						<figure class="img img-white">
+							<img src="{VALUE|cot_mav_thumb($this, 370, 208, crop)}" class="img-responsive" data-test="1" alt="{VALUE.DESC}" title="{VALUE.TEXT}"/>
+							<figcaption class="text-center hidden-md">{VALUE.TEXT}</figcaption>
+						</figure>
+
+					</a>
+				</div>
+				<!-- IF {KEY} % 2 == 0 -->
+				<div class="clearfix hidden-lg hidden-md"></div>
+				<!-- ENDIF -->	
+				<!-- IF {KEY} % 4 == 0 -->
+				<div class="clearfix visible-lg visible-md"></div>
+				<!-- ENDIF -->
+				<!-- ENDFOR -->
+				<!-- IF {PAGE_MAVATAR|count} > 6 -->
+			</div>
+
+			<!-- ENDIF -->
+			<div class="clearfix"></div>
+			<!-- IF {PAGE_MAVATAR|count} > 6 -->
+			<div class="text-center"><button class="hiddenports_ btn  intro-btn white-btn">Показать больше</button></div>
+			<!-- ENDIF -->
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 text-col">
+				{PAGE_TEXT}
+			</div>
+
+		</div>
+
 		<div class="clearfix"></div>		
 
 

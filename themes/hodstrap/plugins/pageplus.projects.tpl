@@ -15,13 +15,13 @@
 					<!-- ENDIF -->	
 				</p>
                 <div>{PAGE_ROW_TEXT_SHORT}</div>
-				<div>{PAGE_ROW_HARAKTERISTIKI_SHORT}</div>
-               <!-- <ul class="list-unstyled list-underline">
-                    <li>in reprehenderit in voluptate velit </li>
-                    <li>esse cillum dolore eu fugiat </li>
-                    <li>nulla pariatur. Excepteur sint </li>
-                    <li>occaecat cupidatat non proident, </li>
-                </ul>-->
+				
+                <ul class="list-unstyled list-underline">
+                    <li>{PAGE_ROW_HAR_WEIGHT_TITLE}: {PAGE_ROW_HAR_WEIGHT}</li>
+                    <li>{PAGE_ROW_HAR_PLACES_CABIN_TITLE} / {PAGE_ROW_HAR_PLACES_SALON_TITLE}: {PAGE_ROW_HAR_PLACES_CABIN} / {PAGE_ROW_HAR_PLACES_SALON}</li>
+                    <li>Длина / Высота / Ширина, мм: {PAGE_ROW_HAR_LEN} / {PAGE_ROW_HAR_HEIGHT} / {PAGE_ROW_HAR_WID} </li>
+                    <li>{PAGE_ROW_HAR_SPEED_TITLE}: {PAGE_ROW_HAR_SPEED}</li>
+                </ul>
                 <div class="links clearfix">
                     <a href="{PAGE_ROW_URL}"><span>Посмотреть проект</span> →</a>
                     <a href="{PHP|cot_url('page', 'c=projects')}"><span>Реализованные проекты</span> →</a>

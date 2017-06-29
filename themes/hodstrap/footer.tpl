@@ -55,14 +55,14 @@
 					<div id="spb" class="tab-pane fade in active">
 						<p>{PHP.cfg.footer_spb_phone}</p>
 						<p>{PHP.cfg.footer_spb_addr}</p>
-						<p>{PHP.cfg.footer_msk_email}</p>
-						<a href="{PHP.cfg.footer_msk_map_link}" class="showMap hidden-lg"><span>Посмотреть на карте</span> →</a>
+						<p><a class="email" href="mailto:{PHP.cfg.footer_spb_email}">{PHP.cfg.footer_spb_email}</a></p>
+						<a href="{PHP.cfg.footer_spb_map_link}" class="showMap hidden-lg"><span>Посмотреть на карте</span> →</a>
 					</div>
 					<div id="msk" class="tab-pane fade">
 						<p>{PHP.cfg.footer_msk_phone}</p>
 						<p>{PHP.cfg.footer_msk_addr}</p>
-						<p>{PHP.cfg.footer_spb_email}</p>
-						<a href="{PHP.cfg.footer_spb_map_link}" class="showMap hidden-lg"><span>Посмотреть на карте</span> →</a>
+						<p><a class="email" href="mailto:{PHP.cfg.footer_msk_email}">{PHP.cfg.footer_msk_email}</a></p>
+						<a href="{PHP.cfg.footer_msk_map_link}" class="showMap hidden-lg"><span>Посмотреть на карте</span> →</a>
 					</div>
 				</div>
 			</div>     
