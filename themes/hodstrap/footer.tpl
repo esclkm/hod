@@ -47,7 +47,7 @@
 		<div class="col-xs-12 col-sm-6 col-lg-4 contacts-col text-col right-col">
 			<p class="h1">КОНТАКТЫ</p>
 			<div class="address">
-				<ul class="nav nav-pills hidden">
+				<ul class="nav nav-pills">
 					<li class="active"><a data-toggle="pill" href="#spb">В Санкт-Петербурге</a></li>
 					<li><a data-toggle="pill" href="#msk">В Москве</a></li>
 				</ul>

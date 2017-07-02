@@ -54,7 +54,7 @@
 			<!-- BEGIN: LIST_ROW -->
 			<div class="col-md-4 col-sm-6 col-xs-12 list-project">
 				<!-- IF {LIST_ROW_MAVATARCOUNT} -->
-					<a href="{LIST_ROW_URL}"><img src="{PHP.cfg.testurl}{LIST_ROW_MAVATAR.1|cot_mav_thumb($this, 360, 270, crop)}" alt="{LIST_ROW_MAVATAR.1.DESC}" class="img-responsive" title="{LIST_ROW_MAVATAR.1.DESC}"/></a>
+					<a href="{LIST_ROW_URL}"><img src="{PHP.cfg.testurl}{LIST_ROW_MAVATAR.1|cot_mav_thumb($this, 370, 208, crop)}" alt="{LIST_ROW_MAVATAR.1.DESC}" class="img-responsive" title="{LIST_ROW_MAVATAR.1.DESC}"/></a>
 				<!-- ELSE -->
 					<a href="{LIST_ROW_URL}"><img src="{PHP.cfg.mainurl}/themes/{PHP.usr.theme}/images/no-image.png" class="img-responsive"/></a>
 				<!-- ENDIF -->

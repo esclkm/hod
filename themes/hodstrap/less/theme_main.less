@@ -485,6 +485,19 @@ header {
             margin: 1px;
         }
     }
+	.white-arrow {
+        top: 50%;
+        margin-top: -14px;
+        position: absolute;
+    }
+    .left .white-arrow {
+        transform: rotate(90deg);
+        left: 41px;
+    }
+    .right .white-arrow {
+        transform: rotate(-90deg);
+        right: 41px;
+    }
 }
 
 #video {
@@ -632,11 +645,13 @@ header {
         margin-right: 20px;
         span {
             display: inline-block;
-            padding-left: 24px;
+            padding-left: 10px;
         }
         .small-icon {
-            position: absolute;
-            bottom: 6px;
+			display: inline-block;
+			/*padding-top: 2px;*/
+			position: relative;
+			margin-bottom: -3px;
         }
     }
     form {

@@ -13,13 +13,16 @@
 				<a href="{PAGE_CAT|cot_url('page','c=$this')}" class="pull-right back-link">← <span>Назад к категориям</span></a>
 			</p>
 
-            
+            <!-- IF {PAGE_ROW_TEXT_SHORT} -->
             <div class="row">
                 <div class="col-xs-12 col-sm-12 text-col">
 					{PAGE_ROW_TEXT_SHORT}
                 </div>
-    
+			
+			
             </div>
+			<!-- ENDIF -->
+			<!-- IF {PAGE_MAVATAR|count} > 6 -->
 			<div class="row">
 				<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
 				<!-- IF {KEY} == 9 -->
@@ -51,6 +54,7 @@
 				<div class="text-center"><button class="hiddenports_ btn  intro-btn white-btn">Показать больше</button></div>
 				<!-- ENDIF -->
 			</div>
+			<!-- ENDIF -->
 			<div class="row">
                 <div class="col-xs-12 col-sm-12 text-col">
 					{PAGE_TEXT}
@@ -129,6 +133,14 @@
                 </div>
 				<!-- ENDFOR -->
             </div>
+			<a class="left carousel-control" href="#galleryCarousel" role="button" data-slide="prev">
+                <span class="small-icon white-arrow" aria-hidden="true"></span>
+                <span class="sr-only">Предыдущий</span>
+            </a>
+            <a class="right carousel-control" href="#galleryCarousel" role="button" data-slide="next">
+                <span class="small-icon white-arrow" aria-hidden="true"></span></span>
+                <span class="sr-only">Следующий</span>
+            </a>
         </div>
     </section>
     <!-- ENDIF -->	

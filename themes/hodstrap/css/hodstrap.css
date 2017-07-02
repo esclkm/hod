@@ -6887,6 +6887,19 @@ header .white-arrow {
   background-color: transparent;
   margin: 1px;
 }
+#gallery .white-arrow {
+  top: 50%;
+  margin-top: -14px;
+  position: absolute;
+}
+#gallery .left .white-arrow {
+  transform: rotate(90deg);
+  left: 41px;
+}
+#gallery .right .white-arrow {
+  transform: rotate(-90deg);
+  right: 41px;
+}
 #video {
   background-image: url(../images/bg.jpg);
   color: #fff;
@@ -7065,11 +7078,13 @@ header .white-arrow {
 }
 #contacts .links a span {
   display: inline-block;
-  padding-left: 24px;
+  padding-left: 10px;
 }
 #contacts .links a .small-icon {
-  position: absolute;
-  bottom: 6px;
+  display: inline-block;
+  /*padding-top: 2px;*/
+  position: relative;
+  margin-bottom: -3px;
 }
 #contacts form {
   margin-top: 23px;

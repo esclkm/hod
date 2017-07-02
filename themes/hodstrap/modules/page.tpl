@@ -17,12 +17,15 @@
 
 
 	<div class="container container-fluid">
+		<!-- IF {PAGE_ROW_TEXT_SHORT} -->
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 text-col">
 				{PAGE_ROW_TEXT_SHORT}
 			</div>
 
 		</div>
+		<!-- ENDIF -->
+		<!-- IF {PAGE_MAVATAR|count} > 6 -->
 		<div class="row">
 			<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
 			<!-- IF {KEY} == 9 -->
@@ -54,13 +57,14 @@
 			<div class="text-center"><button class="hiddenports_ btn  intro-btn white-btn">Показать больше</button></div>
 			<!-- ENDIF -->
 		</div>
+		<!-- ENDIF -->
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 text-col">
 				{PAGE_TEXT}
 			</div>
 
 		</div>
-
+		
 		<div class="clearfix"></div>		
 
 
