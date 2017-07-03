@@ -30,7 +30,7 @@
 				<!-- ENDIF -->
 				<div class="col-lg-3 col-md-3 col-xs-6 paddingbottom10 paddingtop10">
 
-					<a href="{VALUE.file}"  class="fancybox i_text" rel="gallery1" >	
+					<a href="{VALUE|cot_mav_thumb($this, 1200, 1200, auto, filter_wmark).file}"  class="fancybox i_text" rel="gallery1" >	
 						<figure class="img img-white">
 							<img src="{VALUE|cot_mav_thumb($this, 370, 208, crop)}" class="img-responsive" data-test="1" alt="{VALUE.DESC}" title="{VALUE.TEXT}"/>
 							<figcaption class="text-center hidden-md">{VALUE.TEXT}</figcaption>
@@ -64,10 +64,10 @@
         </div>
     </section>
 
-    <!-- IF {PAGE_3D|mb_strlen} > 10 OR {PAGE_YOUTUBE|mb_strlen} >10 -->
+    <!-- IF {PAGE_3D|mb_strlen} > 10 OR {PAGE_YOUTUBE|mb_strlen} > 10 -->
     <section id="gallery-video" class="clearfix">
 		<!-- IF {PAGE_3D|mb_strlen} > 10 -->
-        <div class="col-xs-12 <!-- IF {PAGE_YOUTUBE|mb_strlen} >10 -->col-sm-6<!-- ENDIF --> left-col">
+        <div class="col-xs-12 <!-- IF {PAGE_YOUTUBE|mb_strlen} > 10 -->col-sm-6<!-- ENDIF --> left-col">
 
 			<div class="iframe-container1 embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="{PAGE_3D}/embed" frameborder="0" allowfullscreen></iframe>
@@ -129,7 +129,7 @@
             <div class="carousel-inner" role="listbox">
 				<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
                 <div class="item <!--IF {KEY|minus_one} == 0 -->active<!-- ENDIF -->">
-                    <img src="{PHP.cfg.testurl}{VALUE|cot_mav_thumb($this, 1200, 675, crop)}" alt="" class="img-responsive">
+                    <img src="{PHP.cfg.testurl}{VALUE|cot_mav_thumb($this, 1200, 675, crop, filter_wmark)}" alt="" class="img-responsive">
                 </div>
 				<!-- ENDFOR -->
             </div>

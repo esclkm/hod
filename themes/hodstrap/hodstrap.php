@@ -45,7 +45,7 @@ if (!function_exists('minusone'))
 	function filter_wmark($newimage)
 	{
 		global $cfg, $usr;
-		$stamp = imagecreatefrompng($cfg['themes_dir'].'/'.$usr['theme'].'/images/logo.png');
+		$stamp = imagecreatefrompng($cfg['themes_dir'].'/'.$usr['theme'].'/images/watermark.png');
 		// Set the margins for the stamp and get the height/width of the stamp image
 		$marge_right = 10;
 		$marge_bottom = 10;

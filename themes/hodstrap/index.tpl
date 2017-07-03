@@ -59,6 +59,42 @@
     </section>
     
     <section id="video">
+			
+
+<script>
+(function(){
+    // Your base, I'm in it!
+    var originalAddClassMethod = jQuery.fn.addClass;
+
+    jQuery.fn.addClass = function(){
+        // Execute the original method.
+        var result = originalAddClassMethod.apply( this, arguments );
+
+        // trigger a custom event
+        jQuery(this).trigger('cssClassChanged');
+
+        // return the original result
+        return result;
+    }
+})();
+$(function() {
+	$('#videoCarousel').on('slid.bs.carousel', function () {
+		
+		$( "#videoCarousel .item" ).each(function() {
+
+				var iframe = $(this).find('iframe')[0].contentWindow;
+				var func = $( this ).hasClass( "active" )  ? 'playVideo' :'pauseVideo';
+				
+				iframe.postMessage('{"event":"command","func":"' + func + '","args":""}','*');
+			
+		});
+		
+		//return false;
+	});
+});
+
+</script>
+
         <div id="videoCarousel" class="carousel slide clearfix" data-ride="carousel" data-interval="false">
             <p class="h1 text-center">{PHP.cfg.ind_sl4_title}</p>
             <div class="carousel-inner" role="listbox">
@@ -66,7 +102,8 @@
                 <div class="item <!--IF {KEY} == 0 -->active<!-- ENDIF -->">
                     <div class="iframe-container">
 						<!-- IF {VALUE|youtube_id_from_url} -->
-                        <iframe src="https://www.youtube.com/embed/{VALUE|youtube_id_from_url}" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/{VALUE|youtube_id_from_url}?enablejsapi=1&theme=dark&showinfo=0&mute=1" frameborder="0" allowfullscreen></iframe>
+						
 						<!-- ELSE -->
 						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/{VALUE|vimeo_id_from_url}?title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe>
 						<!-- ENDIF -->
