@@ -6403,9 +6403,9 @@ a .link-arrow {
   text-decoration: none;
 }
 .list-underline li {
-  height: 28px;
+  /*height: 28px;*/
   border-bottom: 1px solid #E6E6E6;
-  font-size: 11px;
+  font-size: 15px;
   font-family: 'PFDinTextCompPro-Regular', sans-serif;
   padding: 6px 0;
 }
@@ -6785,6 +6785,8 @@ header .white-arrow {
 }
 #portfolio .image-col img {
   width: 100%;
+  z-index: -2;
+  position: relative;
   object-fit: cover;
 }
 #portfolio .text-col .arrow {
