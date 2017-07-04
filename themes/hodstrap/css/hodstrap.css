@@ -6984,6 +6984,14 @@ header .white-arrow {
   /*background-color: #0f0f0f;*/
   color: #0f0f0f;
 }
+#contacts .feedback-col .alert {
+  margin-top: -20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#contacts .feedback-col .alert p {
+  line-height: 20px;
+}
 #contacts .contacts-col {
   color: #fff;
 }

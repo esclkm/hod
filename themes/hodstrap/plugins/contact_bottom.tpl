@@ -1,9 +1,13 @@
 <!-- BEGIN: MAIN -->
 <div class="callForMeasure">
-	<div class="contactResult">
-		<p class="h1">Оставить заявку</p>
-	</div>
+	
+		
+			
 	<form action="{CONTACT_FORM_SEND}" method="POST" class="callForMeasureForm">
+			<div class="contactResult">
+				<p class="h1">Оставить заявку</p>
+			</div>
+
 			<div class="group">      
 				{CONTACT_FORM_NAME|cot_rc_modify('$this', 'class="", placeholder="" required="required"')}
 				<span class="bar"></span>
@@ -26,7 +30,8 @@
 			</div>
 			<div class="text-right">
 				<button class="btn btn-default">Отправить заявку</button>	
-			</div>		
+			</div>
+
 	</form>
 	
 
