@@ -32,7 +32,7 @@
 
 					<a href="{VALUE|cot_mav_thumb($this, 1200, 1200, auto, filter_wmark).file}"  class="fancybox i_text" rel="gallery1" >	
 						<figure class="img img-white">
-							<img src="{VALUE|cot_mav_thumb($this, 370, 208, crop)}" class="img-responsive" data-test="1" alt="{VALUE.DESC}" title="{VALUE.TEXT}"/>
+							<img src="{VALUE|cot_mav_thumb($this, 370, 208, crop)}" class="img-responsive" data-test="1" alt="{VALUE.DESC|htmlspecialchars}" title="{VALUE.TEXT|htmlspecialchars}"/>
 							<figcaption class="text-center hidden-md">{VALUE.TEXT}</figcaption>
 						</figure>
 
