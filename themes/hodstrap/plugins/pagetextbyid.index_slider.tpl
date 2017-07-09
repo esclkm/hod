@@ -18,7 +18,7 @@
 				<!-- ENDFOR -->
 				<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
                 <div class="item <!--IF {KEY|get_ind_img_ingex} == 0 -->active<!-- ENDIF -->">
-                    <img src="{VALUE|cot_mav_thumb($this, 1200, 675, crop, filter_wmark}" alt="" class="img-responsive">
+                    <img src="{VALUE|cot_mav_thumb($this, 1200, 675, crop, filter_wmark)}" alt="" class="img-responsive">
                 </div>				
 				<!-- ENDFOR -->
 				
