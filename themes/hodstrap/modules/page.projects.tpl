@@ -91,12 +91,19 @@
 
     <section id="specs">
         <div class="container">
-            <div class="row">
+            <div class="">
                 <p class="h2">Технические характеристики {PAGE_SHORTTITLE} </p>
             </div>
-            <div class="col-xs-12 col-sm-12 table-col left-col">
+            <div class="table-col">
 				{PAGE_EXFLDGROUPEDITOR}	
             </div>
+			<!-- IF {PAGE_PRICE} -->
+			<div class="text-right h1">
+				Цена: 
+				<!-- IF {PAGE_PRICE_PLUS} --> от <!-- ENDIF --> {PAGE_PRICE} млн. руб.
+				
+			</div>
+			<!-- ENDIF -->
         </div>
     </section>
 

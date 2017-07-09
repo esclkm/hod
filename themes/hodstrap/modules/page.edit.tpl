@@ -81,9 +81,10 @@
 						</div>	
 						<h4>{PHP.L.Other}</h4>
 						<div class="form-group">
-							<label>{PAGEEDIT_FORM_CONTACT_TEXT_TITLE}</label>
-							{PAGEEDIT_FORM_CONTACT_TEXT}
-						</div>
+							<label>{PAGEEDIT_FORM_PRICE_TITLE}</label>
+							{PAGEEDIT_FORM_PRICE}
+							{PAGEEDIT_FORM_PRICE_PLUS}
+						</div>	
 						<div class="form-group">
 							<label>{PAGEEDIT_FORM_LINK_TITLE}</label>
 							{PAGEEDIT_FORM_LINK}

@@ -113,7 +113,7 @@
 
 	{PHP|contact_bottom('ajax')}
 	{FOOTER_RC}
-
+	{PHP.cfg.counter_bottom}
 </body>
 </html>
 <!-- END: FOOTER -->

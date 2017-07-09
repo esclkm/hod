@@ -72,18 +72,19 @@
 			<!-- Header -->
 			<header id="page-top" style="background-image:{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/images/logo.png; {PHP.cfg.ind_sl0_img}">
 				<div class="container text-center">
-					<div class="row">
+					
 						<div class="intro-logo">
 							<img src="{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/images/logo.png" alt="" class="img-responsive">
 						</div>
-					</div>
-					<div class="row">
+
 						<div class="intro-text">
-							<p>{PHP.cfg.subtitle}</p>
-							<button class="btn intro-btn white-btn toBottom">Оставить заявку</button>
-							<a href="" class="toBottom"><i class="small-icon white-arrow"></i></a>
+							<div>
+								<p>{PHP.cfg.subtitle}</p>
+								<button class="btn intro-btn white-btn toBottom">Оставить заявку</button>
+								<a href="" class="toBottom"><i class="small-icon white-arrow"></i></a>
+							</div>
 						</div> 
-					</div>
+					
 
 				</div>
 			</header>

@@ -9,22 +9,22 @@
 			</div>
 
 			<div class="group">      
-				{CONTACT_FORM_NAME|cot_rc_modify('$this', 'class="", placeholder="" required="required"')}
+				{CONTACT_FORM_NAME|cot_rc_modify('$this', 'class="", placeholder=" " required="required"')}
 				<span class="bar"></span>
 				<label>Имя</label>
 			</div>
 			<div class="group">      
-				{CONTACT_FORM_PHONE|cot_rc_modify('$this', 'class="", placeholder="" required="required"')}
+				{CONTACT_FORM_PHONE|cot_rc_modify('$this', 'class="", placeholder=" " required="required"')}
 				<span class="bar"></span>
 				<label>Телефон</label>
 			</div>
 			<div class="group">      
-				{CONTACT_FORM_ADDR|cot_rc_modify('$this', 'class="", placeholder="" required="required" type="email"')}
+				{CONTACT_FORM_ADDR|cot_rc_modify('$this', 'class="email", placeholder=" " required="required" type="email"')}
 				<span class="bar"></span>
 				<label>Электронная почта</label>
 			</div>
 			<div class="group">      
-				{CONTACT_FORM_TEXT|cot_rc_modify('$this', 'class="", placeholder="" required="required" rows="2"')}	
+				{CONTACT_FORM_TEXT|cot_rc_modify('$this', 'class="", placeholder=" " required="required" rows="2"')}	
 				<span class="bar"></span>
 				<label>Сообщение</label>
 			</div>

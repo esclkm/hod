@@ -6405,7 +6405,7 @@ a .link-arrow {
 .list-underline li {
   /*height: 28px;*/
   border-bottom: 1px solid #E6E6E6;
-  font-size: 15px;
+  font-size: 17px;
   font-family: 'PFDinTextCompPro-Regular', sans-serif;
   padding: 6px 0;
 }
@@ -6637,7 +6637,8 @@ header {
   font-family: 'PFDinTextCompPro-Medium', sans-serif;
   color: #fff;
   background-image: url(../images/bg1.jpg);
-  min-height: 600px;
+  height: 100vh;
+  min-height: 570px;
   background-size: cover;
 }
 header .container {
@@ -6650,12 +6651,20 @@ header .intro-logo {
   margin-top: 114px;
 }
 header .intro-text {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  /*top: 93px;*/
+  bottom: 14px;
+  font-size: 25px;
+}
+@media (max-height: 492px) {
+  header .intro-text {
+    display: none;
+  }
+}
+header .intro-text > div {
   max-width: 500px;
   margin: 0 auto;
-  /*top: 93px;*/
-  top: 94px;
-  font-size: 25px;
 }
 header .intro-btn {
   margin: 10px auto 44px;
@@ -6841,6 +6850,9 @@ header .white-arrow {
 #portfolio p td,
 #portfolio table td {
   padding: 2px 6px;
+}
+#portfolio .h1 {
+  width: calc(100% - 30px);
 }
 .text-col {
   height: auto;
@@ -7135,7 +7147,9 @@ header .white-arrow {
 #contacts input:focus ~ label,
 #contacts textarea:focus ~ label,
 #contacts input:valid ~ label,
-#contacts textarea:valid ~ label {
+#contacts textarea:valid ~ label,
+#contacts input.email:not(:placeholder-shown) ~ label,
+#contacts textarea.email:not(:placeholder-shown) ~ label {
   top: -10px;
   font-size: 14px;
   color: #282828;
@@ -7307,6 +7321,13 @@ header .white-arrow {
 }
 .page-content + #contacts {
   margin-top: -25px;
+}
+.lg-sub-html h4 {
+  font-size: 20px !important;
+  font-weight: normal !important;
+}
+.lg-sub-html p {
+  font-size: 16px !important;
 }
 @media (min-width: 1280px) {
   .text-col .container {

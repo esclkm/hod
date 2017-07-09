@@ -1,7 +1,7 @@
 $(window).on('load', function() {
-    $('header').height($(window).height());
-    console.log( $(window).height()-540);
-    $('.intro-text').css('top', $(window).height()-540);
+//    $('header').height($(window).height());
+//    console.log( $(window).height()-540);
+//    $('.intro-text').css('top', $(window).height()-540);
     $('#portfolio .image-col img').height(function(){
         return $('#portfolio .text-col').height()+40;
     })

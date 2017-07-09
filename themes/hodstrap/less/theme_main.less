@@ -66,7 +66,7 @@ a .link-arrow {
 .list-underline li{
     /*height: 28px;*/
     border-bottom: 1px solid #E6E6E6;
-    font-size: 15px;
+    font-size: 17px;
     font-family: @regular-font, sans-serif;
     padding: 6px 0;
     @media (max-width: 767px) {
@@ -301,7 +301,8 @@ header {
     font-family: @medium-font, sans-serif;
     color: #fff;
     background-image: url(../images/bg1.jpg);
-    min-height: 600px;
+	height: 100vh;
+    min-height: 570px;
     background-size: cover;
     .container {
         /*text-align: center;*/
@@ -313,12 +314,18 @@ header {
         margin-top: 114px;
     }
     .intro-text {
-        position: relative;
-        max-width: 500px;
-        margin: 0 auto;
+        position: absolute;
+		width: 100%;
         /*top: 93px;*/
-        top: 94px;
+        bottom: 14px;
         font-size: 25px;
+		@media (max-height: 492px) {
+			display:none;
+		}
+		&>div{
+			max-width: 500px;
+			margin: 0 auto;			
+		}
     }
     .intro-btn {
         margin: 10px auto 44px;
@@ -436,6 +443,9 @@ header {
         margin: 21px 0 27px;
 		td { padding: 2px 6px;}
     }
+	.h1 {
+		width: calc(~"100% - 30px");
+	}
 }
 
 .text-col {
@@ -701,7 +711,7 @@ header {
 		}
 
 		/* active state */
-		&:focus ~ label, &:valid ~ label{
+		&:focus ~ label, &:valid ~ label, &.email:not(:placeholder-shown) ~ label{
 			top: -10px;
 			font-size: 14px;
 			color: #282828;
@@ -897,4 +907,12 @@ header {
 	margin-top: -25px;
 }
 
+.lg-sub-html h4 {
+	font-size: 20px!important;
+	font-weight: normal!important;
+}
+.lg-sub-html p {
+	font-size: 16px!important;
+	
+}
 

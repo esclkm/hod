@@ -69,10 +69,13 @@
 							{PAGEADD_FORM_METADESC}
 						</div>	
 						<h4>{PHP.L.Other}</h4>
+
 						<div class="form-group">
-							<label>{PAGEADD_FORM_CONTACT_TEXT_TITLE}</label>
-							{PAGEADD_FORM_CONTACT_TEXT}
-						</div>
+							<label>{PAGEADD_FORM_PRICE_TITLE}</label>
+							{PAGEADD_FORM_PRICE}
+							{PAGEADD_FORM_PRICE_PLUS}
+						</div>		
+						
 						<div class="form-group">
 							<label>{PAGEADD_FORM_LINK_TITLE}</label>
 							{PAGEADD_FORM_LINK}
