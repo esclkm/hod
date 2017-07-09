@@ -22,7 +22,7 @@
 			
             </div>
 			<!-- ENDIF -->
-			<!-- IF {PAGE_MAVATAR|count} > 6 -->
+			<!-- IF {PAGE_MAVATAR|count} > 0 -->
 			<div class="row">
 				<!-- FOR {KEY}, {VALUE} IN {PAGE_MAVATAR} -->
 				<!-- IF {KEY} == 9 -->
@@ -45,12 +45,12 @@
 				<div class="clearfix visible-lg visible-md"></div>
 				<!-- ENDIF -->
 				<!-- ENDFOR -->
-				<!-- IF {PAGE_MAVATAR|count} > 6 -->
+				<!-- IF {PAGE_MAVATAR|count} > 8 -->
 				</div>
 				
 				<!-- ENDIF -->
 				<div class="clearfix"></div>
-				<!-- IF {PAGE_MAVATAR|count} > 6 -->
+				<!-- IF {PAGE_MAVATAR|count} > 8 -->
 				<div class="text-center"><button class="hiddenports_ btn  intro-btn white-btn">Показать больше</button></div>
 				<!-- ENDIF -->
 			</div>
