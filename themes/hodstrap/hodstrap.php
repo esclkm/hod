@@ -143,6 +143,7 @@ if (!function_exists('minusone'))
    {
 	   global $cfg;
 	   $images = string_split($cfg['ind_sl3_images']);
+	   echo("OLLLLLA".($key + count(images)-1));
 	   return $key + count(images)-1;
 	   
    }
