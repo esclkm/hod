@@ -61,17 +61,18 @@
 				
 				<div class="text-center">
 					<a href="{LIST_ROW_URL}">{LIST_ROW_SHORTTITLE}</a>
-					<!-- IF {LIST_ROW_PRICE} -->
-					<div>
-						<a href="{LIST_ROW_URL}">Цена: <!-- IF {LIST_ROW_PRICE_PLUS} --> от <!-- ENDIF --> {LIST_ROW_PRICE} млн. руб.</a>
-					</div>
-					<!-- ENDIF -->
 					<!-- IF {PHP.usr.isadmin} -->
 					<a class="small pull-right" href="{LIST_ROW_ADMIN_EDIT_URL}" title="{PHP.L.Edit}">
 						<span class="glyphicon glyphicon-edit"></span> 
 					</a>
 
 					<!-- ENDIF -->
+					<!-- IF {LIST_ROW_PRICE} -->
+					<div>
+						<a href="{LIST_ROW_URL}">Цена: <!-- IF {LIST_ROW_PRICE_PLUS} --> от <!-- ENDIF --> {LIST_ROW_PRICE} млн. руб.</a>
+					</div>
+					<!-- ENDIF -->
+
 				</div>
 			</div>
 			<!-- IF {LIST_ROW_NUM} % 2 == 0 -->
