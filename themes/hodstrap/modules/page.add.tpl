@@ -125,10 +125,7 @@
 					<label>{PAGEADD_FORM_TEXT_SHORT_TITLE}</label>
 					<div>{PAGEADD_FORM_TEXT_SHORT}</div>
 				</div>
-				<div class="form-group">
-					<label>{PAGEADD_FORM_PRICE_TITLE} ({PAGEADD_FORM_PRICE_PLUS})</label>
-					<div>{PAGEADD_FORM_PRICE} </div>
-				</div>
+				
 			</div>
 			<div class="tab-pane" id="harform">
 				{PAGEADD_EXFLDGROUPEDITOR}

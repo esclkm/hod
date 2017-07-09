@@ -139,10 +139,6 @@
 					<label>{PAGEEDIT_FORM_TEXT_SHORT_TITLE}</label>
 					<div>{PAGEEDIT_FORM_TEXT_SHORT}</div>
 				</div>
-				<div class="form-group">
-					<label>{PAGEEDIT_FORM_PRICE_TITLE} ({PAGEEDIT_FORM_PRICE_PLUS})</label>
-					<div>{PAGEEDIT_FORM_PRICE} </div>
-				</div>
 								
 			</div>
 			<div class="tab-pane" id="harform">

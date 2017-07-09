@@ -40,31 +40,8 @@
     <section id="portfolio" class="clearfix">
 		{PHP|pp_list('projects', 1, 'RAND()', '', 'projects')}
     </section>
-    
-    <section id="gallery">
-        <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-				<!-- FOR {KEY}, {VALUE} IN {PHP.cfg.ind_sl3_images|string_split} -->
-                <li data-target="#galleryCarousel" data-slide-to="{KEY}" class="<!--IF {KEY} == 0 -->active<!-- ENDIF -->"></li>
-				<!-- ENDFOR -->
-            </ol> 
-            <div class="carousel-inner" role="listbox">
-				<!-- FOR {KEY}, {VALUE} IN {PHP.cfg.ind_sl3_images|string_split} -->
-                <div class="item <!--IF {KEY} == 0 -->active<!-- ENDIF -->">
-                    <img src="{VALUE}" alt="" class="img-responsive">
-                </div>
-				<!-- ENDFOR -->
-            </div>
-			<a class="left carousel-control" href="#galleryCarousel" role="button" data-slide="prev">
-                <span class="small-icon white-arrow" aria-hidden="true"></span>
-                <span class="sr-only">Предыдущий</span>
-            </a>
-            <a class="right carousel-control" href="#galleryCarousel" role="button" data-slide="next">
-                <span class="small-icon white-arrow" aria-hidden="true"></span></span>
-                <span class="sr-only">Следующий</span>
-            </a>
-        </div>
-    </section>
+    {PHP|pagefullbyid('index_slider', 'index_slider')}
+
     
     <section id="video">
 			

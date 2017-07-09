@@ -133,6 +133,17 @@ if (!function_exists('minusone'))
    }
    function string_split($string)
    {
+	   if (!trim($string))
+	   {
+		   return array();
+	   }
 	   return preg_split("/\r\n|\n|\r/", $string);
+   }
+   function get_ind_img_ingex($key) 
+   {
+	   global $cfg;
+	   $images = string_split($cfg['ind_sl3_images']);
+	   return $key + count(images)-1;
+	   
    }
 }
