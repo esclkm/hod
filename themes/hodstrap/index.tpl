@@ -87,7 +87,8 @@ $(function() {
                 <div class="item <!--IF {KEY} == 0 -->active<!-- ENDIF -->">
                     <div class="iframe-container">
 						<!-- IF {VALUE|youtube_id_from_url} -->
-                        <iframe src="https://www.youtube.com/embed/{VALUE|youtube_id_from_url}?enablejsapi=1&theme=dark&showinfo=0&mute=1" frameborder="0" allowfullscreen></iframe>
+						<!-- &mute=1 -->
+                        <iframe src="https://www.youtube.com/embed/{VALUE|youtube_id_from_url}?enablejsapi=1&theme=dark&showinfo=0" frameborder="0" allowfullscreen></iframe>
 						
 						<!-- ELSE -->
 						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/{VALUE|vimeo_id_from_url}?title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe>

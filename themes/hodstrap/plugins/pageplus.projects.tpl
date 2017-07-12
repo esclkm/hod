@@ -1,9 +1,11 @@
 <!-- BEGIN: MAIN -->
 
 	<!-- BEGIN: PAGE_ROW -->
-	
+        <div class="image-col right-col">
+            <img src="<!-- IF {PAGE_ROW_MAVATAR} -->{PAGE_ROW_MAVATAR.1|cot_mav_thumb($this, 1200, 675, auto, filter_wmark)}<!-- ELSE -->{PHP.cfg.mainurl}/themes/{PHP.usr.theme}/images/no-image.png<!-- ENDIF -->" alt="" class="img-responsive">   
+        </div>	
 		<div class="container">
-	        <div class="col-xs-12 col-sm-6 text-col left-col">
+	        <div class="col-xs-12 col-md-6 text-col left-col">
             
                 <a class="arrow" href="{PAGE_ROW_URL}"><i class="small-icon black-arrow"></i></a>
                 <p class=" h1 text-left">
@@ -29,9 +31,7 @@
                 </div>
             </div>
         </div>
-        <div class="image-col right-col">
-            <img src="<!-- IF {PAGE_ROW_MAVATAR} -->{PAGE_ROW_MAVATAR.1|cot_mav_thumb($this, 640, 450, crop)}<!-- ELSE -->{PHP.cfg.mainurl}/themes/{PHP.usr.theme}/images/no-image.png<!-- ENDIF -->" alt="" class="img-responsive">   
-        </div>
+
 	
 
 	<!-- END: PAGE_ROW -->

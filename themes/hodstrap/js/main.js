@@ -1,14 +1,3 @@
-$(window).on('load', function() {
-//    $('header').height($(window).height());
-//    console.log( $(window).height()-540);
-//    $('.intro-text').css('top', $(window).height()-540);
-    $('#portfolio .image-col img').height(function(){
-        return $('#portfolio .text-col').height()+40;
-    })
-//    $('#contacts .feedback-col').height(function(){
-//        return $('#contacts .contacts-col').height();
-//    })
-});
 $(document).ready(function(){
     var offset_stuck = 100;
     $(window).scroll(function () {

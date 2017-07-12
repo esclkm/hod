@@ -6422,6 +6422,14 @@ a .link-arrow {
   width: 100%;
   height: 93px;
 }
+@media (max-width: 767px) {
+  #mainNav .container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 #mainNav.navbar-home {
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
   /* FF3.6-15 */
@@ -6783,6 +6791,7 @@ header .white-arrow {
 }
 #portfolio {
   height: auto;
+  min-height: 28.125vh;
 }
 #portfolio .image-col {
   width: 50%;
@@ -6794,6 +6803,7 @@ header .white-arrow {
 }
 #portfolio .image-col img {
   width: 100%;
+  height: 100%;
   z-index: -2;
   position: relative;
   object-fit: cover;
@@ -6853,6 +6863,34 @@ header .white-arrow {
 }
 #portfolio .h1 {
   width: calc(100% - 30px);
+}
+@media (max-width: 1199px) {
+  #portfolio .text-col {
+    padding: 0 20px 20px;
+  }
+  #portfolio .text-col .arrow {
+    top: 28px;
+    right: 20px;
+  }
+}
+@media (max-width: 991px) {
+  #portfolio {
+    min-height: inherit;
+  }
+  #portfolio p {
+    text-align: justify;
+  }
+  #portfolio .image-col {
+    position: relative;
+    width: 100%;
+  }
+  #portfolio .links a {
+    margin: 0 !important;
+  }
+  #portfolio .image-col img {
+    height: auto !important;
+    width: 100%;
+  }
 }
 .text-col {
   height: auto;
@@ -7006,6 +7044,7 @@ header .white-arrow {
 }
 #contacts .contacts-col {
   color: #fff;
+  background-color: #000;
 }
 #contacts .text-col {
   /*min-height: 480px;*/
@@ -7360,13 +7399,6 @@ header .white-arrow {
     padding-left: 10px;
     padding-right: 10px;
   }
-  #portfolio .text-col {
-    padding: 0 20px 20px;
-  }
-  #portfolio .text-col .arrow {
-    top: 28px;
-    right: 20px;
-  }
   #contacts .rights {
     bottom: 5px;
     top: auto;
@@ -7480,17 +7512,6 @@ header .white-arrow {
   #video .carousel-control {
     width: 40px;
   }
-  #portfolio p {
-    text-align: justify;
-  }
-  #portfolio .image-col {
-    position: relative;
-    width: 100%;
-  }
-  #portfolio .links a {
-    margin: 0 !important;
-  }
-  #portfolio .image-col img,
   #contacts .feedback-col {
     height: auto !important;
     width: 100%;
