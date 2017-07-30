@@ -13,14 +13,13 @@
 				<a href="{PAGE_CAT|cot_url('page','c=$this')}" class="pull-right back-link">← <span>Назад к категориям</span></a>
 			</p>
 
-            <!-- IF {PAGE_ROW_TEXT_SHORT} -->
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 text-col">
-					{PAGE_ROW_TEXT_SHORT}
-                </div>
-			
-			
-            </div>
+			<!-- IF {PAGE_TEXT_BEFORE} -->
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 text-col">
+							{PAGE_TEXT_BEFORE}
+						</div>
+
+					</div>
 			<!-- ENDIF -->
 			<!-- IF {PAGE_MAVATAR|count} > 0 -->
 			<div class="row">
