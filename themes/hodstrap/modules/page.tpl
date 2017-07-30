@@ -17,10 +17,10 @@
 
 
 	<div class="container container-fluid">
-		<!-- IF {PAGE_ROW_TEXT_SHORT} -->
+		<!-- IF {PAGE_TEXT_BEFORE} -->
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 text-col">
-				{PAGE_ROW_TEXT_SHORT}
+				{PAGE_TEXTBEFORE}
 			</div>
 
 		</div>

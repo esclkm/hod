@@ -114,8 +114,8 @@
 			<div class="tab-pane" id="optionsform">	
 
 			    <div class="form-group">
-					<label>{PAGEADD_FORM_HARAKTERISTIKI_TITLE}</label>
-					<div>{PAGEADD_FORM_HARAKTERISTIKI}</div>
+					<label>{PAGEADD_FORM_TEXT_BEFORE_TITLE}</label>
+					<div>{PAGEADD_FORM_TEXT_BEFORE}</div>
 				</div>
 			    <div class="form-group">
 					<label>{PAGEADD_FORM_HARAKTERISTIKI_SHORT_TITLE}</label>

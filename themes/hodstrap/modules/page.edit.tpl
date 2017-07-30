@@ -128,8 +128,8 @@
 			<div class="tab-pane" id="optionsform">
 			
 			    <div class="form-group">
-					<label>{PAGEEDIT_FORM_HARAKTERISTIKI_TITLE}</label>
-					<div>{PAGEEDIT_FORM_HARAKTERISTIKI}</div>
+					<label>{PAGEEDIT_FORM_TEXT_BEFORE_TITLE}</label>
+					<div>{PAGEEDIT_FORM_TEXT_BEFORE}</div>
 				</div>
 			    <div class="form-group">
 					<label>{PAGEEDIT_FORM_HARAKTERISTIKI_SHORT_TITLE}</label>
