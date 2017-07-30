@@ -3,6 +3,7 @@
 <section class="page-content">
 
 	<div class="container">
+		
 		<div id="portfolio-page">
 
 			<p class="h1">
@@ -11,10 +12,10 @@
 				<a href="{PHP|cot_url('page', 'c=projects')}" class="back-link">← <span>Назад к категориям</span></a>
 				<!-- ENDIF -->
 			</p>
-
+			<div class="text-justify textbox">{LIST_TEXT}</div>
 			<!-- IF {LIST_ROWCAT_URL} -->
 
-			<div class="text-justify textbox">{LIST_TEXT}</div>
+			
 			<!-- BEGIN: LIST_ROWCAT -->
 
 			<article>
