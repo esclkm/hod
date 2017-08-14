@@ -36,7 +36,7 @@
 						<div class="col-xs-12">
 							<p class="h2">{LIST_ROWCAT_TITLE} <!-- IF {PHP.usr.isadmin} -->({LIST_ROWCAT_COUNT})<!-- ENDIF --></p>
 						</div>
-						<div class="col-xs-12 col-sm-8 text-col">
+						<div class="col-xs-12 col-sm-8">
 							<!-- IF {LIST_ROWCAT_DESC} -->
 							<p class="small">{LIST_ROWCAT_DESC}</p>
 							<!-- ENDIF -->

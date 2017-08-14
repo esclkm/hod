@@ -83,14 +83,7 @@ a .link-arrow {
     position: absolute;
     width: 100%;
     height: 93px;
-    @media (max-width: 767px) {
-        .container {
-			padding-left: 0;
-			padding-right: 0;
-			margin-left: 0;
-			margin-right: 0;
-		}
-    }	
+	
     &.navbar-home {
         background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
         background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -457,12 +450,9 @@ header {
 		width: calc(~"100% - 30px");
 	}
 	@media (max-width: @screen-md-max) {
-		.text-col {
-			padding: 0 20px 20px;
-			.arrow {
+		.text-col .arrow {
 				top: 28px;
 				right: 20px;
-			}
 		}
 	}
 	@media (max-width: @screen-sm-max){
@@ -488,16 +478,9 @@ header {
 }
 
 .text-col {
-    height: auto;
-    padding: 0;
     padding-top: 20px;
     padding-bottom: 20px;
-    &.left-col {
-        padding-right: 40px;
-    }
-    &.right-col {
-        padding-left: 40px;
-    }
+
 }
 .left-col .container {
     float: right;
@@ -637,15 +620,15 @@ header {
 		color:#fff;
 		background-color: #000;
 	}
-    .text-col {
-        /*min-height: 480px;*/
+   
+        
         p {
             font-family: @medium-font, sans-serif;
             font-size: 16px;
             line-height: 24px;
             margin: 0;
         }
-    }
+    
     .address {
         padding: 27px 0;
     }
@@ -717,7 +700,13 @@ header {
 			position: relative;
 			margin-bottom: -3px;
         }
+		@media (max-width: 767px) {
+
+			float: none;
+			display: block;
+		}
     }
+
     form {
         margin-top: 23px;
     }
@@ -842,10 +831,7 @@ header {
         /*padding: 0 15px;*/
     }
     .row > div {
-        &.text-col {
-            //padding-left: 15px;
-            padding-right: 80px;
-        }
+
         &.image-col {
             padding-right: 15px;
             padding-top: 4px;
